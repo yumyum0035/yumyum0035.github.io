@@ -1,0 +1,159 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Color palette: SUMMER GLOW
+
+Coral: #ff8882;
+Purple Haze: #543855
+Tan: #e88d72;
+Desert Sun: #fbb574;
+Mint: #43C0BB;
+Pumpkin: #FEBE5D;
+
+*/
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12pt;
+    color: #543855;
+    background-color: #43C0BB;
+}
+
+main {
+    background-color: white;
+}
+
+h1, h2 {
+    font-family: 'Bebas Neue', Helvetica, sans-serif;
+    padding: 5%;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-top: 5%;
+    font-weight: 500;
+    color: #43C0BB;
+}
+
+h1 {
+    font-size: 32pt;
+}
+
+h2 {
+    font-size: 24pt;
+}
+
+p {
+    margin: 5px;
+    padding: 2%;
+    line-height: 1.5;
+    border-radius: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul#listaCompra li {
+    padding: 5%;
+    margin: 2%;
+    background-color: #F4F6F8;
+    border-radius: 10px;
+    list-style-position: inside;
+
+    font-size: 14pt;
+    text-transform: capitalize;
+    line-height: 30px;
+}
+
+ul#listaCompra li:before {
+    content: url("../img/carrot.svg");
+    font-family: "Font Awesome 5 Free";
+    padding: 0 5% 0 0;
+}
+
+#listaParent {
+    height: 300px;
+    overflow: auto;
+}
+
+.container, .container-total {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.container-total {
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    font-size: 16pt;
+}
+
+.container-total p {
+    padding: 0 15px 0 15px;
+}
+
+button {
+    background-color: #FEBE5D;
+    color: white;
+    border: none;
+    height: 50px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 15px;
+}
+
+button.add {
+    background-color: #77cc89;
+}
+
+button.remove {
+    background-color: tomato;
+}
+
+#total {
+    font-size: 10pt;
+    text-align: right;
+    margin: 2% 5%;
+}
+
+#suma {
+    font-size: 25pt;
+    font-family: 'Bebas Neue', Helvetica, sans-serif;
+    color: #FEBE5D;
+}
+
+@media screen and (width: 280px) { /* resolución para el movil que se dobla  lol */
+    body {
+        font-size: 10pt;
+    }
+
+    main {
+        width: 280px;
+        margin: 25px auto;
+    }
+
+    h1, h2 {
+        font-size: 25pt;
+    }
+
+    ul#listaCompra li {
+        font-size: 12pt;
+    }
+
+    #total {
+        font-size: 8pt;
+    }
+
+    button {
+        font-size: 8pt;
+        padding: 2%;
+    }
+}
+
+@media screen and (min-width: 320px) { /* se encarga del ancho completo para todo lo demás */
+    main {
+        width: 450px;
+        margin: 25px auto;
+    }
+}

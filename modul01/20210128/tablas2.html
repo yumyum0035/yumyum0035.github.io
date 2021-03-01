@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas pt2</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Ejercicio con tablas pt.2</h1>
+        <article> <h2>Ejercicio 10: tabla compleja</h2>
+            <table>
+                <caption>Tabla compleja</caption>
+                <!-- tabla original
+                    <tr>
+                        <th></th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+                    </tr>
+                    <tr>
+                        <th>A</th>
+                        <td>1A</td>
+                        <td>2A</td>
+                        <td>3A</td>
+                        <td>4A</td>
+                        <td>5A</td>
+                    </tr>
+                    <tr>
+                        <th>B</th>
+                        <td>1B</td>
+                        <td>2B</td>
+                        <td>3B</td>
+                        <td>4B</td>
+                        <td>5B</td>
+                    </tr>
+                    <tr>
+                        <th>C</th>
+                        <td>1C</td>
+                        <td>2C</td>
+                        <td>3C</td>
+                        <td>4C</td>
+                        <td>5C</td>
+                    </tr>
+                    <tr>
+                        <th>D</th>
+                        <td>1D</td>
+                        <td>2D</td>
+                        <td>3D</td>
+                        <td>4D</td>
+                        <td>5D</td>
+                    </tr>
+                    <tr>
+                        <th>E</th>
+                        <td>1E</td>
+                        <td>2E</td>
+                        <td>3E</td>
+                        <td>4E</td>
+                        <td>5E</td>
+                    </tr>
+                    
+                -->
+                <tr>
+                    <th></th><th>1</th><th>2</th><th>3</th><th colspan="2">4 y 5</th></th>
+                </tr>
+                <tr>
+                    <th>A</th>
+                    <td rowspan="2" colspan="2">1A 2A <br><br> 1B 2B</td>
+                    <td rowspan="2">3A <br><br> 3B</td>
+                    <td rowspan="2">4A <br><br> 4B</td>
+                    <td rowspan="2">5A <br><br> 5B</td>
+                </tr>
+                <tr>
+                    <th>B</th>
+                </tr>
+                <tr>
+                    <th>C</th>
+                    <td colspan="3">1C 2C 3C</td>
+                    <td>4C</td>
+                    <td>5C</td>
+                </tr>
+                <tr>
+                    <th>D</th>
+                    <td rowspan="2">1D <br><br> 1E</td>
+                    <td rowspan="2">2D <br><br> 2E</td>
+                    <td rowspan="2">3D <br><br> 3E</td>
+                    <td>4D</td>
+                    <td>5D</td>
+                </tr>
+                <tr>
+                    <th>E</th>
+                    <td>4E</td>
+                    <td>5E</td>
+                </tr>
+            </table>
+        </article>
+        
+        <article> <h2>Ejercicio 11: tabla con dos ejes</h2>
+            <table>
+                <caption>Tabla que tiene header en la columna tambien!</caption>
+                <tr>
+                    <th></th><th>cabecera 1</th><th>cabecera 2</th><th>cabecera 3</th><th>cabecera 4</th>
+                </tr>
+                <tr>
+                    <th>cabecera A</th>
+                    <td>1A</td>
+                    <td>2A</td>
+                    <td>3A</td>
+                    <td>4A</td>
+                </tr>
+                <tr>
+                    <th>cabecera B</th>
+                    <td>1B</td>
+                    <td>2B</td>
+                    <td>3B</td>
+                    <td>4B</td>
+                </tr>
+                <tr>
+                    <th>cabecera C</th>
+                    <td>1C</td>
+                    <td>2C</td>
+                    <td>3C</td>
+                    <td>4C</td>
+                </tr>
+            </table>
+        </article>
+
+        <article> <h2>Ejercicio 12: tablas semánticas</h2>
+            <!-- las tablas tienen etiquetas semánticas como thead, tbody y tfoot, no afectan al aspecto, pero sirven para SEO -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cabecera 1</th>
+                        <th>Cabecera 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Celda 1</td>
+                        <td>Celda 2</td>
+                    </tr>
+                    <tr>
+                        <td>Celda 3</td>
+                        <td>Celda 4</td>
+                    </tr>
+                </tbody>
+                <tfoot> 
+                    <!-- El tfoot es para volver a poner la cabecera para tener la referencia abajo tambien!! -->
+                    <tr>
+                        <th>Cabecera 1</th>
+                        <th>Cabecera 2</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+
+        <article> <h2>Ejercicio 13: colgroup</h2>
+            <table>
+                <caption>Titulo de tabla, para mostrar que va antes :)</caption>
+                <colgroup>
+                    <!-- explicación: 
+                        esto sirve para dar color a las columnas, se pone un <col> por cada columna y no se cierra
+                    -->
+                    <col>
+                    <col style="background-color:white;">
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Cabecera 1</th>
+                        <th>Cabecera 2</th>
+                        <th>Cabecera 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Celda 1</td>
+                        <td>Celda 2</td>
+                        <td>Celda 3</td>
+                    </tr>
+                    <tr>
+                        <td>Celda 4</td>
+                        <td>Celda 5</td>
+                        <td>Celda 6</td>
+                    </tr>
+                    <tr>
+                        <td>Celda 7</td>
+                        <td>Celda 8</td>
+                        <td>Celda 9</td>
+                    </tr>
+                </tbody>
+                <tfoot> 
+                    <tr>
+                        <th>Cabecera 1</th>
+                        <th>Cabecera 2</th>
+                        <th>Cabecera 3</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+    </main>
+</body>
+</html>

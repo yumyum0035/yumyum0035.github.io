@@ -1,0 +1,40 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12pt;
+}
+
+.container {
+    display: block;
+}
+
+#calcOperator {
+    font-family: monospace;
+    padding: 20px 24px;
+    color: rgb(197, 83, 30);
+    background-color: rgba(255, 135, 79, 0.5);
+    border: dashed rgb(255, 118, 55) 1px;
+    border-radius: 15px;
+}
+
+#showResult {
+    text-align: center;
+}
+
+button {
+    margin: 0 5px;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    font-size: 20pt;
+    color: rgb(197, 83, 30);
+    background-color: rgba(255, 135, 79, 0.5);
+    border: dashed rgb(255, 118, 55) 1px;
+    border-radius: 15px;
+    font-family: monospace;
+}
+
+input {
+    padding: 2%;
+    font-size: 14pt;
+    margin: 15px 5px;
+}

@@ -1,0 +1,74 @@
+---------------
+---------------
+Formularios
+---------------
+---------------
+Un formulario es un elemento HTML para añadir datos de entrada del usuario.
+
+1. Estructura básica
+-------------------
+
+<form> Etiqueta que engloba el formulario
+    Ej:<form  action="enviar.php" method="GET">
+              Acción del botón    Metodo de Envio (GET/POST)
+
+<label> Define la etiqueta de un <input>
+    Ej 1: <label for="nombre">Nombre</label>
+          <input type="text" id="nombre">
+    
+    Ej 2: <label> Nombre <input type="text"> </label>
+
+<input> Control de entrada
+    Ej: <input type="text">
+
+<button> Botón donde hacer clic para enviar los datos
+    Ej: <button>Enviar</button>
+    Atributos: button- reset - submit (Especifica siempre su atributo ya que cada navegador usa uno diferente por defecto)
+
+
+2. tipos de <Imput> 
+-----------------------
+
+<input type="text"> Campo de texto (Valor por defecto)
+<input type="button"> Botón - No confundir con el botón de envío <button>               IMPORTANTE: No funciona como botón de envio
+
+2.1 Imputs de tiempo 
+-----------------------
+
+<input type="date"> Fecha - año, mes y día
+<input type="datetime-local"> NO FUNCIONA EN FIREFOX - Fecha - año, mes, día y hora
+<input type="time"> Tiempo - Hora
+<input type="month"> Mes y Año
+<input type="week"> Fecha con número de semana
+
+2.2 Imputs tutifruti (variados)
+-------------------------------
+
+<input type="search"> Campo de busqueda
+<input type="tel"> Campo de teléfono
+<input type="email"> Fecha y hora, sin zona horaria
+<input type="password"> Campo con el valor oculto
+<input type="url"> Campo de URL
+<input type="color"> Control para especificar un color
+<input type="number"> Número
+<input type="range"> Control deslizante
+    Ej: <input type="range" step="10" min="0" max="40">
+        Valores por defecto: min=0 max=100 (no obligatorios)
+        step: valor de cada paso, no la cantidad de pasos (no obligatorio)
+        value: valor inicial
+        
+        
+        
+        
+<input type="file"> Seleccionar un archivo
+<input type="hidden"> Valor Oculto
+
+
+2.3 Imputs de envio y reseteo
+------------------------------
+<input type="reset"> Botón de reset
+<input type="submit"> Botón de envio del formulario (funciona igual que button)
+<input type="image"> Imagen como botón de envío
+
+------------------------------
+  

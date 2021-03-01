@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------
+Crea un formulario de reserva de un vehiculo con los siguientes campos:
+- Datos personales
+Nombre*
+Apellidos*
+Email*
+Telefono*
+
+- Fecha
+Dia y hora de recogida
+Día y hora de devolución
+- Características
+
+Vehiculo: Berlina, SUV, Cupé, Familiar, Furgoneta
+Plazas: De 2 a 8
+Color (color) - Blanco - Rojo - Celeste - Negro
+
+Comentarios
+
+Boton de reset
+Boton de Envío
+
+*Obligatorio
+--------------------------
+
+añadir Name a todos los elementos que se envían

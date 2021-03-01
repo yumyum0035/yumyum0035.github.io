@@ -1,0 +1,111 @@
+links
+----------------------
+<a> <link> <nav> <nav>
+
+<a>
+Hiperenllaç que s’utilitza per enllaçar d'un lloc a un altra
+
+<a href=""> </a>
+
+enllaços a la part superior de la pàgina (enllaç fals)
+    #
+    #top
+    
+    
+    
+    Atributs
+    ----------
+    href="" - (Hiperlink REFerence) URL del enllaç - Obligatori
+    
+    
+        href especials
+        --------------
+
+        Obrir email
+        <a href="mailto:mi@email.com">Enviar mail</a>
+
+        Obrir email amb varis destinataris
+        <a href="mailto:mi@email.com;otro@email.com ">Enviar mail</a>
+
+        Obrir email amb CC
+        <a href="mailto:mi@email.com?cc=otro@email.com">Enviar mail</a>
+
+        Obrir email amb BCC
+        <a href="mailto:mi@email.com?bcc=otro@email.com">Enviar mail</a>
+
+        Obrir email amb subjet (asumpte)
+        <a href="mailto:mi@email.com?subject=Asunto%20con%20espacios">Enviar mail</a>
+
+        Obrir email amb Text predefinit
+        <a href="mailto:mi@email.com?body=Este%20es%20el%20cuerpo%20del%20mensaje">Enviar mail</a>
+    
+        El primer parametre comença amb (?) i els segúents amb (&)
+        Multiples valors dins un parametre es separan amb (;)
+        el espai en blanc entre lletres es (%20) NO es un codi HTML es un codi URL o URI
+        Un salt de linia (al cos de text es (&NewLine;)
+
+    
+        Enllaç per trucar a un telèfon
+        <a href="tel:+1234567890">+12 345 67 890</a>
+        
+        Enllaç a telegram (canvia ususari pel nom del usuari sense @)
+        <a href="https://telegram.me/usuari">Enviam un missatge per telegram</a>
+
+        Enllaç a WhatsApp (canvia telefon per el número de telefon del usuari)
+        <a href="https://wa.me/telefon">Envia un missatge a WhatsApp</a>
+
+        Enllaç per trucar per Skype (canvia LOGIN per el nom del usuari)
+        <a href="skype:LOGIN?call"> Trucar al usuari de Skype </a>
+
+
+    download - En comptes de mostrar es baixarà el document enllaçat
+    
+        Atribut sense Valor
+        <a href="imatge.png" download >descarrega imatge</a>
+        
+        Atribut amb nom com a valor
+        <a href=" " download="mi imatge" >descarrega imatge</a>
+        
+        Atribut amb nom i terminacio com a valor
+        <a href=" " download="mi-imatge.jpg" >descarrega imatge</a>
+        
+        
+    hreflang="en" - valor per quan cambiem d'idioma - Si cal
+    
+    <a href="" hreflang="en"> </a> Important per SEO i accesibilitat
+
+
+    rel=" " - relació entre el document actual i el document enllaçat. SEO 
+             pot tindre multiples valors
+    
+    
+    target - On s'ha d'obrir l'enllaç en el nostre navegador
+        
+        <a target="_blank">
+
+        Valors
+        -------
+        _self - Obre en mateix marc (per defecte)
+        _blank - Obre en nova finestra o pestanya
+        
+        _parent Obre el document enllaçat al marc pare
+        _top - Obre el document enllaçat al cos complet 
+        framename Obre a l'iframe anomenat
+    
+    type
+    <a type="media_type">
+
+
+<link> Document o recurs extern (Per exemple un full d'estil)
+
+    <link rel="stylesheet" href="styles.css">
+ 
+ 
+<nav> Enllaços de navegació
+
+    <nav>
+      <a href="/html/">HTML</a>
+      <a href="/css/">CSS</a>
+      <a href="/js/">JavaScript</a>
+      <a href="/python/">Python</a>
+    </nav>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Hoy haremos condicionales</h1>
+    <!-- Condicionales
+
+        <pre>
+            if(condicion) {
+                //codigo aqui que se ejecuta si se cumple la condición
+            } else {
+                //codigo aqui que se ejecuta en caso contrario.
+            }
+        </pre>
+        
+        ejercicio: hacer un código que nos diga si tenemos suficiente dinero para comprar un coche y comprobar si tienes más de 18 años
+    
+    -->
+
+    <button onclick="canIBuyCar();">¿Puedo comprar coche?</button>
+
+    <h2>Cálculo de horas</h2>
+    <!-- Hacer un calculador de hora que si le pasas 61 minutos te sume 1 hora en lugar de poner 61 minutos. -->
+    <button onclick="clockCalc();">¿Qué hora es?</button>
+    <p id="hourResult"></p>
+
+    <!-- Preguntar al usuario un numero y lo compare con un numero secreto que tiene el ordenador, le indique si es mayor o menor que el numero hasta que consiga la respuesta correcta y devuelva el numero de intentos que ha hecho. -->
+
+    <h2>Adivina el número!</h2>
+    <p><button onclick="guessMyNumber();">Juega</button></p>
+
+    <script src="js/source.js"></script>
+</body>
+</html>

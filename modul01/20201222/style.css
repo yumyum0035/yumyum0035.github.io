@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 12pt;
+    word-wrap: break-word;
+}
+
+h1, h2 {
+    font-size: 32pt;
+    padding: 10px 0;
+}
+
+p {
+    padding: 5px 5px;
+}
+
+figcaption {
+    font-size: 10pt;
+    font-style: italic;
+}
+
+#android {
+    background-color: lightgreen;
+}
+
+#apple {
+    background-color: lightgray;
+}
+
+#winp {
+    background-color: darkgray;
+}
+
+#firefox {
+    background-color: tomato;
+}
+
+img {
+   width: 100%;
+}
+
+/*----  float settings start here ----*/
+div.posFloat {
+    float: left;
+    height: 700px;
+    width: 300px;
+    margin: 0 0 0 5px; /* clock wise!! top right bottom left! */
+    padding: 0 15px;
+
+    /* width total: 320px*/
+}
+/*----  float settings end here ----*/
+
+/*----  absolute settings start here ----*/
+    div.container {
+        height: 700px;
+        max-width: 300px;
+        padding: 0 15px;
+
+        /* 300 + 30 de padding + 5 de margin */
+    }
+    .absolute0 {
+        position: absolute;
+        top: 0;
+        left: 5px;
+    }
+    .absolute1 {
+        position: absolute;
+        top: 0;
+        left: 340px; /* 300 + 30 de padding + 5 de margin del 0 + 5 del margin propio */
+    }
+    .absolute2 {
+        position: absolute;
+        top: 0;
+        left: 675px;
+    }
+    .absolute3 {
+        position: absolute;
+        top: 0;
+        left: 1010px;
+    }
+/*----  absolute settings end here ----*/
+
+/*----  static settings start here ----*/
+div.posStatic {
+    position: static;
+    width: 300px;
+    height: 700px;
+    padding: 0 15px;
+}
+
+.static0, .static1, .static2, .static3 {
+    display: inline-block; /* hace que todos los elementos se muestren como un bloque */
+    vertical-align: top; /* alinea de forma vertical a la parte superior */
+}
+
+.static0 {
+    margin: 0 0 0 5px;
+}
+/*----  static settings end here ----*/
+
+/*----  relative settings start here ----*/
+.posRelative {
+    width: 300px;
+    height: 700px;
+    position: relative;
+    padding: 0 15px;
+}
+
+.relative0 {
+    position: relative;
+    left: 5px;
+    top: 0;
+}
+
+.relative1 {
+    position: relative;
+    left: 340px;
+    top: -700px;
+}
+
+.relative2 {
+    position: relative;
+    left: 675px;
+    top: -1400px;
+}
+
+.relative3 {
+    position: relative;
+    left: 1010px;
+    top: -2100px;
+}
+/*----  relative settings end here ----*/

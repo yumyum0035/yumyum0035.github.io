@@ -1,0 +1,102 @@
+html {
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+h1 { 
+    font-size: 4rem; 
+    line-height:normal; 
+    padding: 10px;
+}
+
+h2 { 
+    font-size: 2rem; 
+    line-height:normal; 
+    padding: 10px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 5px;
+}
+
+main {
+    width: 900px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+section {
+    background: #6e6e6e;
+    padding: 20px;
+}
+
+article {
+    width: 49.5%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 auto;
+}
+
+article img {
+    font-size: 0;
+    max-width: 100%;
+    margin: 0 0 20px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background: lightseagreen;
+    color: white;
+    height: 50vh;
+    padding: 20px;
+}
+
+.right-aligned {
+    text-align: right;
+}
+
+/******* css del ejercicio 2 *******/
+
+.article-Position {
+    position: relative;
+    width: 100vw;
+    height: 100vh; /* vh es la medida del viewport (height), 100 es la medida del viewport en total*/
+}
+
+.article-Position:first-of-type {
+    background: lightgray;
+}
+
+.container {
+    background-color: #43c0bb;
+    color: white;
+    width: 160px;
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+    border-radius: 10px;
+    position: absolute;
+    margin: 5px;
+}
+
+.dalt { top: 0;}
+
+.mig { top: 50%; margin-top: -60px;}
+
+.baix {  bottom: 0;}
+
+.esquerra { left: 0;}
+
+.centre { left: 50%; margin-left: -80px;}
+
+.dreta { right: 0;}

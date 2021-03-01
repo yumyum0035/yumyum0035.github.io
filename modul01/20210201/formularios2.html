@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- reset css 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+        -->
+        <link rel="stylesheet" href="css/form.css">
+    </head>
+    <body>
+        <h1>Formularios 2</h1>
+        <article><h2>Tipos de input 2</h2>
+            <form name="talla">
+                <label>Enviar
+                <input type="submit" value="Enviar">
+                </label>
+                
+                <h3>Input de radio</h3>
+                <label for="pequeña">Pequeña
+                    <input type="radio" name="talla" value="pequeña" checked>
+                    <!-- name="" responde al nombre del formulario, en este caso form name="talla"-->
+                    <!-- checked hace que sea el valor seleccionado por defecto, pero el usuario lo puede cambiar-->
+                </label>
+                <label for="mediana">Mediana
+                    <input type="radio" name="talla" value="mediana">
+                </label>
+                <label for="grande">Grande
+                    <input type="radio" name="talla" value="grande">
+                </label>
+            </form>
+            <form name="lenguajes">
+                <h3>Checkbox</h3>
+                <p>Selecciona los lenguajes que conoces:</p>
+                <label>HTML <input type="checkbox" name="lenguajes" value="HTML">
+                </label>
+                <label>CSS
+                    <input type="checkbox" name="lenguajes" value="CSS">
+                </label>
+                <label>Javascript
+                    <input type="checkbox" name="lenguajes" value="javascript">
+                </label>
+                <label>Piet
+                    <input type="checkbox" name="lenguajes" value="piet">
+                </label>
+            </form>
+        </article>
+        <article><h2>Desplegables</h2>
+            <h3>Lista de desplegables de opciones</h3>
+            <form>
+            <label>Desplegable
+                <select name="desplegable" id="Desplegable">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="javascript">javascript</option>
+                    <option value="java">java</option>
+                    <option value="python">python</option>
+                    <option value="php">PHP</option>
+                    <option value="piet">piet</option>
+                </select>
+            </label>
+            </form>
+            <form>
+                <label>Desplegable Multiple
+                    <select name="desplegable" id="Desplegable" multiple>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="javascript">javascript</option>
+                        <option value="java">java</option>
+                        <option value="python">python</option>
+                        <option value="php">PHP</option>
+                        <option value="piet">piet</option>
+                    </select>
+                </label>
+            </form>
+        </article>
+    </body>
+</html>

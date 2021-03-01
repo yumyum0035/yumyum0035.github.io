@@ -1,0 +1,78 @@
+/*
+    @import url('https://meyerweb.com/eric/tools/css/reset/reset.css');
+    @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap');
+
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        font-family: Helvetica, sans-serif;
+        font-size: 1rem;
+    }
+
+    main {
+        margin: 30px auto;
+        width: 500px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+
+    h1, h2 {
+        margin: 20px;
+        text-align: center;
+        font-family: 'Bodoni Moda', serif;
+    }
+
+*/
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    /*border-spacing: separate;*/
+    /* solo se puede usar sin collapse, es el default de tablas, el feo, el de 1990*/
+    border: solid 1px rgb(133, 61, 61);
+}
+
+td {
+    padding: 2px 10px;
+    width: 120px;
+    height: 60px;
+    background: #ffcccc;
+    border: solid 1px rgb(133, 61, 61);
+}
+
+.top {
+    vertical-align: top; /* no se hereda, el default es middle */
+}
+
+.middle {
+    vertical-align: center;
+}
+
+.bottom {
+    vertical-align: bottom;
+}
+
+th {
+    background: rgb(197, 142, 142);
+    color: white;
+    padding: 10px;
+}
+
+thead { /* aa nivel de css, el th tiene mas peso que el thead HMMMMmmmm */
+    background-color: lightseagreen;
+    color: white;
+}

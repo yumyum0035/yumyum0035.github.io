@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Formulario - Coni Herrera</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Rent a car</h1>
+    </header>
+    <main>
+        <form id="info">
+            <fieldset><legend>Datos personales</legend>
+                <label>Nombre*
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                </label>
+                <label>Apellidos*
+                    <input type="text" name="apellidos" placeholder="Apellidos" required>
+                </label>
+                <label>e-mail*
+                    <input type="email" name="email" placeholder="e-mail" required>
+                </label>
+                <label>Teléfono*
+                    <input type="tel" name="telefono" placeholder="Teléfono" required>
+                </label>
+            </fieldset>
+
+            <fieldset><legend>Fecha</legend>
+                <label>Día y hora de recogida<br>
+                    <input type="date" name="recogida-dia" class="etiqueta-corta">
+                    <input type="time" name="recogida-hora" class="etiqueta-corta">
+                </label>
+                <br>
+                <label>Dia y hora de devolución<br>
+                    <input type="date" name="devolucion-dia" class="etiqueta-corta">
+                    <input type="time" name="devolucion-hora" class="etiqueta-corta">
+                </label>
+            </fieldset>
+
+            <fieldset><legend>Características</legend>
+                <label>Tipo de vehículo<br>
+                    <select name="vehiculo" id="vehiculos" name="vehiculo" multiple>
+                        <option value="Berlina">Berlina</option>
+                        <option value="SUV">SUV</option>
+                        <option value="Cupé">Cupé</option>
+                        <option value="Familiar">Familiar</option>
+                        <option value="Furgoneta">Furgoneta</option>
+                        <option value="Otro">Otro (especificar en comentario)</option>
+                    </select>
+                </label>
+                <br>
+                <label>Ocupantes (de 2 a 8)<br>
+                    <input type="number" min="2" max="8" placeholder="2" name="plazas-coche" class="etiqueta-corta">
+                </label>
+                <br>
+                <label for="color-coche">Color<br>
+                    <input type="color" list="colores-coche" name="color-coche" id="color-coche" class="etiqueta-corta">
+                    <datalist id="colores-coche">
+                        <option value="#ffffff"></option>
+                        <option value="#ff0000"></option>
+                        <option value="#0000ff"></option>
+                        <option value="#000000"></option>
+                    </datalist>
+                </label>
+            </fieldset>
+
+            <fieldset><legend>Comentarios</legend>
+                <label> Escribe algun comentario (opcional)
+                    <textarea name="comentarios" cols="30" rows="5" placeholder="Si no encuentras alguna característica o quieres otro vehículo, escribe aquí." name="comentario"></textarea>
+                </label>
+            </fieldset>
+
+            <p class="note">Los campos con marcados con (*) son obligatorios.</p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reset">
+        </form>
+    </main>
+</body>
+</html>

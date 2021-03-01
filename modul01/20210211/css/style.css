@@ -1,0 +1,166 @@
+/* reset CSS
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+*/
+
+/*** test 
+* {outline: 1px solid orange; padding: 10px;}
+***/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+    font-family: Helvetica, sans-serif;
+}
+
+/** Pseudoclases de formulario  
+
+:checked        - Selecciona elementos input de radio y checkbox
+:indeterminate  - Selecciona elementos input de radio, checkbox y progress desmarcados
+
+:disabled       - Selecciona elementos disabled
+:enabled        - Selecciona elementos activos
+
+:focus          - Selecciona el elemento que tiene el foco 
+
+:in-range       - Selecciona elementos imput que tengan max y min y esten dentro de rango
+:out-of-range   - Selecciona elementos imput que tengan max y min y esten fuera de rango
+:invalid        - Selecciona elementos con valor no válido
+:valid          - Selecciona elementos con valor válido
+
+:optional       - Selecciona elementos opcionales
+:required       - Selecciona elementos obligatorios
+:read-only      - Selecciona elementos de solo lectura
+:read-write     - Selecciona elementos que se pueden reescribir
+
+
+**/
+
+input:checked + label {
+    background: orange;
+}
+
+input:indeterminate + label {
+    background: lightsteelblue;
+}
+/*
+:disabled {background: grey; color: white;}
+#rosario:enabled { background: cyan; }
+
+#rosario:focus { background: red; color: white;}
+
+input:in-range { background: orange; }
+input:out-of-range { background: red;color:white; }
+
+input:invalid { background: #fff1c0; }
+input:valid { background: pink; }
+
+input:optional  { background: pink; }
+input:required  { border: 2px solid green; }
+
+input:read-only { background: yellow; }
+input:read-write { background: pink; }
+*/
+
+/** Pseudoclases de orden  - 1 **/
+
+/* :first-child - Selecciona el primer elemento dentro de su contenedor*/
+p:first-child { 
+    background: greenyellow; 
+}
+/* :last-child - Selecciona el último elemento dentro de su contenedor*/
+p:last-child { background: pink; }
+
+/* :only-child - Selecciona solo los que estan solos dentro de su contenedor */
+div:only-child { background: orange; } /*como hay dos divs que son hermanos no marca ninguno*
+
+/* ejercicio: poner la primera letra del primer parrafo más grande. */
+p:only-child::first-letter { 
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/** Pseudoclases de orden - 2 **/
+
+/* :first-of-type - Selecciona el primer elemento del mismo tipo */
+p:first-of-type { 
+    background: lightsteelblue; 
+}
+
+/* :last-of-type - Selecciona el último elemento del mismo tipo */
+p:last-of-type { 
+    background: lightcoral; 
+}
+
+/* :only-of-type  - Selecciona un elemento que no tiene hermanos del mismo tipo */
+p:only-of-type { 
+    background: lightgoldenrodyellow; 
+}
+
+/* si se pone un espacio entre div :first-child (por ejemplo) hará en todos los div, el primer elemento dentro de los bloques hará lo que haya en el codigo. */
+/* :first-of-type { // seleccionará el primer elemento de cualquier tipo
+    outline: 1px dashed black;
+}
+*/
+
+/* div:first-of-type { // seleccionará el primer elemento de tipo div dentro de un bloque (tenemos dos articles)
+    outline: 1px dashed red;
+}
+*/
+
+div :first-of-type { /* seleccionara el primer elemento de cada tipo DENTRO de su bloque correspondiente*/
+    /* es decir, el ESPACIO entre div y :first-of-type es importante*/
+    outline: 2px dashed blue;
+}
+
+/* last-of-type marcará un tipo en general en lugar de uno concreto, a no ser que le marquemos cual */
+
+/** pseudoclases de orden - 3 **
+    :nth-child(n) Selecciona uno o más elementos en función de su posición entre un grupo de elementos dentro de un bloque.
+    :nth-last-child(n) Lo mismo pero comenzando por el final
+**/
+/* Valores
+    :nth-child(22) - Número de orden
+    :nth-child(odd) - Elementos impares
+    :nth-child(even) - Elementos pares
+    :nth-child(2n) - Cada 2 elementos (pares, que vendria a ser odd), (2n+1) -> marca cada dos, a partir de uno (es decir impares, que vendria a ser odd)
+    :nth-child(3n+4) - Cada 3 elementos + comenzando en el 4
+    :nth-child(-n+3) - Solo los 3 primeros elementos 
+    :nth-child(n+3) - Todos a partir del 3
+*/
+li:nth-child(-n+2) {
+    /* altera elementos de la lista, en este caso, cada 5 elementos*/
+    background: rgba(115, 200, 136, 0.5);
+}
+
+li:nth-child(5n) {
+    /* altera elementos de la lista, en este caso, cada 5 elementos*/
+    background: rgba(115, 200, 200, 0.5);
+}
+/* altera elementos de la lista, en este caso, cada 10 elementos*/
+li:nth-child(10n) {
+    background: rgba(115, 149, 200, 0.5);
+}
+li:nth-child(20n) {
+    /* altera elementos de la lista, en este caso, cada 15 elementos*/
+    background: rgba(128, 115, 200, 0.5);
+}
+
+li:nth-child(1n+10), li:nth-child(1n+30)  {
+    background: rgba(155, 115, 200, 0.5);
+}
+li:nth-child(1n+21), li:nth-child(1n+41) {
+    background: none;
+}
+
+li:nth-last-child(-n+10) { 
+    /* afecta a los 10 últimos elementos */
+    background: rgb(190, 115, 200, 0.5);
+}
+
+li:nth-last-child(1) { 
+    /* afecta solo al ultimo elemento de la lista, sin tener que indicar el número exacto */
+    background: rgb(115, 200, 200);
+}

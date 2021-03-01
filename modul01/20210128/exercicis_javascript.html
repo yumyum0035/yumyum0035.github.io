@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Exercisis</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <main>
+        <h1>Exercicis de javascript!</h1>
+
+        <article>
+            <h2>Text that goes away and returns.</h2>
+
+            <p id="gone1" onclick="showMe('gone1','ShowHide1');">Hello! if you click me, i'll leave! :(</p>
+            <button id="ShowHide1" onclick="showMe('gone1','ShowHide1');">Hide the text!</button>
+
+            <p id="gone2" onclick="showMe('gone2','ShowHide2');">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa magni excepturi error itaque, veniam porro amet officiis minus aut, sed quasi alias veritatis adipisci ducimus ad a nostrum laborum neque?</p>
+            <button id="ShowHide2" onclick="showMe('gone2','ShowHide2');">Hide the text!</button>
+
+            <p id="gone3" onclick="showMe('gone3','ShowHide3');">Error dignissimos quis tenetur, culpa assumenda doloribus voluptatibus dolor, unde mollitia, aliquam doloremque corporis ullam saepe pariatur. Error aut ad quisquam eum! Fuga, delectus voluptate. Ratione laudantium sequi aspernatur mollitia!</p>
+            <button id="ShowHide3" onclick="showMe('gone3','ShowHide3');">Hide the text!</button>
+        </article>
+
+        <article>
+            <h2>Introduce some input and i'll yell it back at you!</h2>
+            <form name="yellBack">
+                <input type="text" id="userText" onchange="checkUserText();">
+            </form>
+            <p id="yelledResult"></p>
+        </article>
+
+        <article>
+            <h2>What day it is today? click to know</h2>
+            <p id="today" onclick="showDate();">Today is...</p>
+            <p id="dateToday"></p>
+        </article>
+
+        <article>
+            <h2>Cooler button</h2>
+            <button id="textButton">Click me!</button>
+            <p id="newTextFromButton"></p>
+        </article>
+
+        <script src="js/source.js"></script>
+    </main>
+</body>
+</html>

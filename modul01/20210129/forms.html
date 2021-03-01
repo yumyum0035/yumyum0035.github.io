@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- reset css 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+        -->
+        <link rel="stylesheet" href="css/form.css">
+    </head>
+    <body>
+        <h1>Formularios 1</h1>
+
+        <article>
+            <section><h2>Formulario básico 1</h2>
+                <form action="enviar.php" method="GET">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre">
+                    </label>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+                
+            <section><h2>Formulario básico 2</h2>
+                <form action="enviar.php" method="GET">
+                    <label>
+                        Nombre
+                        <input type="text">
+                    </label>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </article>
+
+        <article><h2>Tipos de Input 1</h2>
+            <section>
+                <form>
+                    <label>Campo de texto (Valor por defecto)
+                        <input type="text">
+                    </label>
+                    <label>Botón
+                        <input type="button" value="Hola"> 
+                    </label>
+                    <hr>
+                    <h3>Inputs de Tiempo</h3>
+                    <label>Fecha - año, mes y día
+                        <input type="date"> 
+                    </label>
+                    <label>Fecha y hora, sin zona horaria (No funciona en Firefox)
+                        <input type="datetime-local">
+                    </label>
+                    <label>Tiempo - Hora
+                        <input type="time">
+                    </label>
+                    <label>Mes y Año
+                        <input type="month"> 
+                    </label>
+                    <label>Fecha con número de semana
+                        <input type="week"> 
+                    </label>
+                    <hr>
+                    <h3>Inputs Variados</h3>
+                    <label>Campo de busqueda
+                        <input type="search"> 
+                    </label>
+                    <label>Campo de teléfono
+                        <input type="tel"> 
+                    </label>
+                    <label>e-mail
+                        <input type="email"> 
+                    </label>
+                    <label>Campo con el valor oculto (Contraseña)
+                        <input type="password"> 
+                    </label>
+                    <label>Campo de URL
+                        <input type="url"> 
+                    </label>
+                    <label>Control para especificar un color
+                        <input type="color">
+                    </label>
+                    <label>Número
+                        <input type="number" min="1" max="12">
+                    </label>
+                    <label>Control deslizante
+                        <input type="range" step="10" min="0" max="100" value="0" mutable> 
+                        <!--se puede modificar el regulador por css  -->
+                    </label>
+
+                    <hr>
+                    <h3>Inputs de Envio y Reseteo</h3>
+                    <label>Botón de reset
+                        <input type="reset"> 
+                    </label>
+                    <label>Botón de envio
+                        <input type="submit"> 
+                    </label>
+                    <label>Carga de archivos
+                        <input type="file">
+                    </label>
+                    <label>Campo oculto
+                        <input type="hidden" value="Estoy escondido">
+                        <!-- sirve solo para ocultar cosas. por motivos. -->
+                    </label>
+        
+                    <button type="reset">hola</button>
+                    <!-- hacen lo mismo que los inputs type reset/submit, pero son inputs -->
+                </form>
+            </section>
+        </article>
+    </body>
+</html>

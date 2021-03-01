@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    -->
+
+    <title>Tipografias en servidor</title>
+
+
+<!-- reset css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+    
+<style>
+
+/* regla @font-face para cargar cada tipografía */
+@font-face {
+    
+  /* nombre de la tipografía que usará nuestro CSS */
+  font-family: "Atkinson Hyperlegible Regular"; 
+    
+  /* Es importante el orden de carga (a continuación), si lo cumple no sigue cargando */
+
+  /* Tipografia compatible con IE9 */
+  src: url("fonts/EOT/Atkinson-Hyperlegible-Regular-102.eot"); 
+    
+       /* Tipografia compatible con IE6-IE8 */
+  src: url("fonts/EOT/Atkinson-Hyperlegible-Regular-102.eot?#iefix") format("embedded-opentype"),
+      
+       /* Open Type Font */
+       url("fonts/OTF/Atkinson-Hyperlegible-Regular-102.otf") format("opentype"),
+      
+       /* Legacy iOS */
+       url("fonts/SVG/Atkinson-Hyperlegible-Regular-102.svg") format("svg"),
+      
+       /* Safari, Android, iOS */
+       url("fonts/TTF/Atkinson-Hyperlegible-Regular-102.ttf") format("truetype"),
+      
+       /* Navegadores actuales -versión mejorada de WOFF - 30% más de compresión */
+       url("fonts/WOFF2/Atkinson-Hyperlegible-Regular-102a.woff2") format("woff2"),
+      
+       /* Navegadores actuales */
+       url("fonts/WOOF/Atkinson-Hyperlegible-Regular-102.woff") format("woff");   
+    
+  /* grosor: light, regular,bold… */ 
+  font-weight: normal;
+    
+  /* estilo: normal, italic (cursiva), oblique (inclinada) */
+  font-style: normal;
+    
+  /***
+    Font-display 
+    Determina cómo se muestra una fuente basándose en cuándo está descargada y lista para usarse.
+    Más información:
+    https://developer.mozilla.org/es/docs/Web/CSS/@font-face/font-display
+  ***/
+  font-display: swap;   
+}
+
+@font-face {
+  font-family: "Atkinson Hyperlegible Italic"; 
+
+  src: url("fonts/EOT/Atkinson-Hyperlegible-Italic-102.eot"); 
+
+  src: url("fonts/EOT/Atkinson-Hyperlegible-Italic-102.eot?#iefix") format("embedded-opentype"),
+       url("fonts/OTF/Atkinson-Hyperlegible-Italic-102.otf") format("opentype"),
+       url("fonts/SVG/Atkinson-Hyperlegible-Italic-102.svg") format("svg"),
+       url("fonts/TTF/Atkinson-Hyperlegible-Italic-102.ttf") format("truetype"),
+       url("fonts/WOFF2/Atkinson-Hyperlegible-Italic-102a.woff2") format("woff2"),
+       url("fonts/WOOF/Atkinson-Hyperlegible-Italic-102.woff") format("woff");   
+  
+  font-weight: normal;
+  font-style: italic;
+
+  font-display: swap;   
+}  
+    
+@font-face {
+  font-family: "Atkinson Hyperlegible Bold"; 
+
+  src: url("fonts/EOT/Atkinson-Hyperlegible-Bold-102.eot"); 
+
+  src: url("fonts/EOT/Atkinson-Hyperlegible-Bold-102.eot?#iefix") format("embedded-opentype"),
+       url("fonts/OTF/Atkinson-Hyperlegible-Bold-102.otf") format("opentype"),
+       url("fonts/SVG/Atkinson-Hyperlegible-Bold-102.svg") format("svg"),
+       url("fonts/TTF/Atkinson-Hyperlegible-Bold-102.ttf") format("truetype"),
+       url("fonts/WOFF2/Atkinson-Hyperlegible-Bold-102a.woff2") format("woff2"),
+       url("fonts/WOOF/Atkinson-Hyperlegible-Bold-102.woff") format("woff");   
+  
+  font-weight: bold;
+  font-style: normal;
+
+  font-display: swap;   
+}    
+ 
+@font-face {
+  font-family: "Atkinson Hyperlegible Bold Italic"; 
+
+  src: url("fonts/EOT/Atkinson-Hyperlegible-BoldItalic-102.eot"); 
+
+  src: url("fonts/EOT/Atkinson-Hyperlegible-BoldItalic-102.eot?#iefix") format("embedded-opentype"),
+       url("fonts/OTF/Atkinson-Hyperlegible-BoldItalic-102.otf") format("opentype"),
+       url("fonts/SVG/Atkinson-Hyperlegible-BoldItalic-102.svg") format("svg"),
+       url("fonts/TTF/Atkinson-Hyperlegible-BoldItalic-102.ttf") format("truetype"),
+       url("fonts/WOFF2/Atkinson-Hyperlegible-BoldItalic-102a.woff2") format("woff2"),
+       url("fonts/WOOF/Atkinson-Hyperlegible-BoldItalic-102.woff") format("woff");   
+  
+  font-weight: bold;
+  font-style: italic;
+
+  font-display: swap;   
+} 
+    
+/*** CSS - tipografías ***/
+    
+html {font-family:"Atkinson Hyperlegible Regular", serif; }
+
+.destacado { font-size: 1.6rem; line-height: 1.8rem;}
+    
+.negrita, strong, b { font-family: "Atkinson Hyperlegible Bold"; }
+.cursiva, em, i { font-family: "Atkinson Hyperlegible Italic"; }
+.negrita-cursiva { font-family: "Atkinson Hyperlegible Bold Italic"; }
+
+    
+/*****  
+Amarillo: #FFDA1A
+Azul: #0051BA
+Gris claro: #fbfbfd
+Negro: #000009
+
+Ancho máximo: 800px , área externa en gris claro.
+Tipografía: San-serif
+
+*****/    
+
+    
+    
+/*****  TEST  
+    
+* { outline: 1px solid orange; }    
+
+ *****/
+    
+    
+/*****  ESTRUCTURA *****/  
+
+* {box-sizing: border-box;}
+
+body {max-width: 40rem; margin: 0 auto;} 
+
+header { 
+    text-align: center;
+    /* se define una altura para descontarla en el video */
+    height:6.5rem;
+    
+    /* orden de apilamiento para posicionar el texto encima del video */
+        z-index: 100;
+
+    /*  Hack: permite mostrar el texto encima de un video */
+        position: relative;
+
+    /* tambien permite mostrar mediante aislamiento (en vez de position: relative;)
+       texto encima de un video siempre y cuando no sea un enlace
+       isolation: isolate;
+    */
+
+    }
+
+header img { width:20rem; margin: 1rem auto; }
+
+li {padding: 1rem;}
+/* margen negativo para posicionar el video al mismo nivel que el logo y el menu */
+video   { width: 100%;  margin-top: -6.5rem; }  
+
+main, footer { padding:2rem 1rem;}
+h1, h2, p, form {margin: 0 auto;}
+h1, h2, h3, main > p, section > p { padding: 1rem 4rem;}
+
+section {
+
+    /*hack para quitar el espacio de texto que se genera al usar inline-block;
+
+    https://css-tricks.com/fighting-the-space-between-inline-block-elements/
+    */
+    font-size: 0;
+
+    }
+
+section img { width: 18rem; margin: 1rem; }
+
+section div { 
+    width: 18rem; 
+    height: 18rem; 
+    margin: 1rem; 
+    display: inline-block; 
+    text-align: center;
+    padding: 1rem;
+    }
+
+section div img { width: 5rem; }
+
+footer { margin-top: 1rem; }
+
+form { width: 30rem; margin-bottom: 2rem;}
+
+label p, label { margin-bottom: 1rem; }
+
+input, textarea { width: 100%; }
+
+iframe { display: block; margin: 0 auto;}   
+
+/*****  TIPOGRAFIA *****/  
+    
+html { font-size:20px; }
+
+h1 { font-size:2.4rem; text-align: center; } 
+h2 { font-size:2rem;  text-align: center; } 
+h3 { font-size: 1.6rem; }
+
+p { font-size:1rem; text-align: left; } 
+li { display: inline; text-decoration: none; }
+
+form {text-align: right; }
+input, textarea, button { font-size:1rem; } 
+
+/*****  ESTETICA *****/  
+
+html { background: #fbfbfd; }
+body { background: #ffffff; }
+a { text-decoration: none;}
+a:link, a:visited { color: white;}
+a:hover, a:active { color: black; text-decoration: underline;}
+
+section:first-of-type    {background: #0051BA; color: white;}
+
+div { background: #FFDA1A; color: black;}
+
+div:nth-of-type(3n+1) { background: #0051BA; color: white; }
+
+footer {background: #000009 ;  color: white;}
+
+input, input:focus, textarea, textarea:focus  { 
+    background:#222;
+    padding:0.4rem;
+    border: none;
+    border-bottom: 2px solid white; 
+    color: white;
+    }
+
+button { 
+     background: #000009; 
+     color: white;
+     border: 2px solid white;
+     padding:0.6rem 0.8rem;
+     }
+
+button:hover, button:active { background: white; color: black;
+   
+/* outline está incluso con Reset CSS cuando 
+   los input tienen el foco - es por accesibilidad */
+    outline: none ;
+}
+
+/*  Invertir el color de una imagen en blanco y negro 
+section > img { filter:invert(100%); mix-blend-mode: lighten;}
+
+div img { filter:invert(100%); }
+*/
+
+
+
+</style>
+    
+</head>
+<body>
+    <header>
+        <img src="recursos/hackea-logo.svg" alt="hackea - logotipo">
+        <nav>
+            <ul>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <video muted autoplay loop poster="recursos/girafa.png">
+        <source src="recursos/girafa.webm" type="video/webm">
+        <source src="recursos/girafa.mp4" type="video/mp4">
+    </video>
+    
+    <main>
+        <h1>Atkinson font<br>Tipografías en Servidor<br>AEIOU - 1234567890</h1>
+        <h2>Esta tipografía es normal</h2>
+        <h2 class="cursiva">Esta tipografía es cursiva</h2>
+        <h2 class="negrita">Esta tipografía es negrita</h2>
+        <h2 class="negrita-cursiva">Esta tipografía es negrita y cursiva</h2>
+        <p class="destacado">Somos una <strong>agencia digital</strong> que trabaja con clientes en todo el mundo para crear proyectos inolvidables. <em>Trabajando juntos</em>, ayudamos a las <i>marcas y a las empresas emergentes</i> a alcanzar su <b>máximo potencial</b>.</p>
+    </main>
+    <section ID="proyectos">
+        <h2>Proyectos</h2>
+        <p>Somos una agencia digital que trabaja con clientes en todo el mundo para crear proyectos inolvidables. Trabajando juntos, ayudamos a las marcas a las empresas emergentes a alcanzar su máximo potencial.</p>
+        <img src="recursos/vader.jpg" alt="Väder">
+        <img src="recursos/alien.jpg" alt="Älien">
+        <img src="recursos/hanibl.jpg" alt="Hänibl">
+        <img src="recursos/gremlin.jpg" alt="Gremlin">
+    </section>
+    <section ID="servicios">
+        <h2>Servicios</h2>
+        <p>Somos una agencia digital que trabaja con clientes en todo el mundo para crear proyectos inolvidables. Trabajando juntos, ayudamos a las marcas a las empresas emergentes a alcanzar su máximo potencial.</p>
+
+        <div>
+            <img src="recursos/ducha.png" alt="ducha">
+            <h3>Servicio 1</h3>
+            <p>Aenean vitae felis pretium, rutrum est vel, maximus neque. Nullam vestibulum sem non hendrerit ultrices. Curabitur rhoncus iaculis dolor eu pulvinar.</p>
+        </div>
+
+        <div>
+            <img src="recursos/pony-n.png" alt="pony">
+            
+            <h3>Servicio 2</h3>
+            <p>Aenean vitae felis pretium, rutrum est vel, maximus neque. Nullam vestibulum sem non hendrerit ultrices. Curabitur rhoncus iaculis dolor eu pulvinar.</p>
+        </div>
+
+        <div>
+            <img src="recursos/butaca-n.png" alt="butaca">
+            <h3>Servicio 3</h3>
+            <p>Aenean vitae felis pretium, rutrum est vel, maximus neque. Nullam vestibulum sem non hendrerit ultrices. Curabitur rhoncus iaculis dolor eu pulvinar.</p>
+        </div>
+
+        <div>
+        
+            <img src="recursos/cama.png" alt="cama">
+            <h3>Servicio 4</h3>
+            <p>Aenean vitae felis pretium, rutrum est vel, maximus neque. Nullam vestibulum sem non hendrerit ultrices. Curabitur rhoncus iaculis dolor eu pulvinar.</p>
+        </div>
+
+    </section>
+    <footer  ID="contacto">
+        <h2>Contacto</h2>
+        <form action="#" method="get">
+            <label>
+                <p>Nombre*</p>
+                <p><input type="text" name="nombre" required></p>
+            </label>
+            <label>
+                <p>Email*</p>
+                <p><input type="email" name="email" required></p>
+            </label>
+            <label>
+                <p>Comentario</p>
+                <p><textarea name="comentario" id="" cols="30" rows="10"></textarea></p>
+            </label>
+            <button type="submit">Enviar</button>
+        </form>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.694117028817!2d2.192123451788723!3d41.40244877916086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a33d3b71de05%3A0xbb83ff380d17f7fe!2sCibernarium!5e0!3m2!1ses-419!2ses!4v1613408052162!5m2!1ses-419!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</footer>
+</body>
+</html>

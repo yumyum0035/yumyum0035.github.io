@@ -1,0 +1,24 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+th, td {
+    border-spacing: 5px; /* se usa para hacer espacios entre tablas, porque margin no funciona */
+    padding: 5px;
+    border: solid 2px white;
+    text-align: center;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+td {
+    background-color: #ffcccc;
+} 

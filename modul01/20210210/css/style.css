@@ -1,0 +1,42 @@
+/* reset CSS
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+*/
+
+/*** test 
+* {outline: 1px solid orange; padding: 10px;}
+***/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+    font-family: Helvetica, sans-serif;
+}
+
+/** Pseudoclases de enlace  **/
+/* Enlace no visitado */
+a:link { color: lightsteelblue; }
+
+
+/* Enlace visitado */
+a:visited { color: lightseagreen; }
+
+
+/* ratón sobre enlace */
+a:hover { color: orange; }
+
+
+/* enlace seleccionado - debe ir despues de :hover - funciona con cualquier elemento */
+a:active, .activo:active { color: red; } 
+
+
+/*** Pseudoclase Target ***/
+:target { /* cambia el fondo del destino del enlace */
+    /* esto afecta al destino del enlace, si llevara a otra página, esa página tendria que tener este código para hacer lo mismo*/
+    background: lightcoral;
+}
+
+/* si diferencias usando una clase, la clase es del destino, no del enlace */
+.destacado:target { background: light;}

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        -->
+        <title>Document</title>
+
+        <!-- reset css -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+        
+        <!-- CSS beginning -->
+        <style>
+            /*****  TEST  
+                
+            * { outline: 1px solid orange; }    
+
+            *****/          
+            /* Colores
+            ----------
+            Amarillo: #FFDA1A
+            Azul: #0051BA
+            Gris claro: #fbfbfd
+            Negro: #000009
+            */
+
+            html {
+                font-size: 16px;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                font-size: 1rem;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+            /**** HEADER ****/
+            header {
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 1.25rem;
+                width: 100%;
+            }
+
+            header img {
+                width: 300px;
+                margin: 25px 0;
+            }
+
+            header a:link, header a:active, header a:visited {
+                color: #000009;
+                text-decoration: none;
+            }
+
+            header a:hover {
+                color:#0051BA;
+            }
+
+            video {
+                max-width: 100%;
+                z-index: -1;
+                position: relative;
+                margin: -108px;
+            }
+
+            /****** headers ******/
+            h1, h2 {font-size: 3rem;}
+
+            h3 {font-size: 2rem;}
+
+            h4 {font-size: 1.5rem;}
+
+            h1, h2, h3, h4 {
+                margin: 25px;
+                text-align: center;
+                line-height: normal;
+                padding: 20px;
+            }
+
+            /**** MAIN ****/
+            main {
+                margin: 126px 0 0 0;
+            }
+
+            main p {
+                margin: 25px 100px;
+                line-height: 1.5rem;
+            }
+
+            main section:nth-child(2) {
+                background-color: #0051BA;
+                color: #fbfbfd;
+                padding: 20px 0;
+            }
+
+            section div {
+                padding: 5px 0 75px 0;
+            }
+
+            section img {
+                width: 377px;
+                height: 377px;
+                padding: 10px;
+            }
+
+            section section {
+                padding-left: 15px;
+            }
+
+            /******* servicios *******/
+            article {
+                max-width: 340px;
+                height: 340px;
+                margin: 15px 20px;
+                display: inline-block;
+            }
+
+            article p {
+                font-size: .95rem;
+                width: 310px;
+                padding: 15px;
+                margin: 0;
+            }
+
+            article h4 {
+                margin: 0;
+            }
+
+            article:first-of-type {
+                background-color: #0051BA;
+                color: #fbfbfd;
+            }
+
+            article {
+                background-color: #FFDA1A;
+                color: #000009;
+            }
+
+            article:last-of-type {
+                background-color: #0051BA;
+                color: #fbfbfd;
+            }
+
+            article:nth-child(1)::before {
+                content: url('recursos/ducha.png');
+                width: 85px;
+                height: 85px;
+                margin: auto;
+                padding: 25px;
+                display: block;
+            } 
+            article:nth-child(2)::before {
+                content: url('recursos/pony-n.png');
+                width: 85px;
+                height: 85px;
+                margin: auto;
+                padding: 25px;
+                display: block;
+            }
+            article:nth-child(3)::before {
+                content: url('recursos/butaca-n.png');
+                width: 85px;
+                height: 85px;
+                margin: auto;
+                padding: 25px;
+                display: block;
+            } 
+            article:nth-child(4)::before {
+                content: url('recursos/cama.png');
+                width: 85px;
+                height: 85px;
+                margin: auto;
+                padding: 25px;
+                display: block;
+            } 
+
+            /**** FOOTER ****/
+            footer {
+                background-color: #000009;
+                color: #fbfbfd;
+                padding-bottom: 50px;
+            }
+
+            /***** formulario *****/
+            form {
+                background-color: #000009; 
+                padding:10px 10px;
+                width: 600px;
+                margin: 50px auto;
+            }
+
+            label, input {
+                min-width: 580px;
+            }
+
+            input {
+                background-color: #000009;
+                color: #fbfbfd;
+                padding: 10px;
+                margin: 10px 0;
+                border: none;
+                border-bottom: solid 1px #fbfbfd;
+            }
+
+            textarea {
+                background: #000009;
+                color: #fbfbfd;
+                border: none;
+                border-top: solid 1px #fbfbfd;
+                border-bottom: solid 1px #fbfbfd;
+                margin: 30px 0;
+                min-width: 100%;
+                max-width: 100%;
+            }
+
+            button[type="submit"] {
+                width: 90px;
+                height: 37px;
+                display: block;
+                margin: 0 85%;
+                color: #fbfbfd;
+                border: 1px solid #fbfbfd;
+                background-color: #000009;
+                padding: 5px;
+            }
+
+            /***** mapa *****/
+            footer div {
+                margin: 10% 98px;
+            }
+        </style>
+        <!-- CSS end -->
+
+    </head>
+    <body>
+        <header>
+            <img src="recursos/hackea-logo.svg" alt="">
+            <nav class="vertical-menu">
+                <a href="#proyecto">proyectos</a> ·
+                <a href="#servicios">servicios</a> ·
+                <a href="#contacto">contacto</a>
+            </nav>
+            <video muted autoplay loop poster="recursos/girafa.png">
+                <source src="recursos/girafa.mp4" type="video/mp4">
+                <source src="recursos/girafa.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </header>
+
+        <main>
+            <section><h1>Siéntete como en casa</h1>
+                <p>Somos una agencia digital que trabaja con clientes en todo el mundo para crear proyectos inolvidables. Trabajando juntos, ayudamos a las marcas y a las empresas emergentes a alcanzar su máximo potencial.</p>
+            </section>
+
+            <section id="proyecto"><h3>Proyectos</h3>
+                <p>Aenean vitae felis pretium, rutrum est vel, maximus neque. Nullam vestibulum sem non hendrerit ultrices. Curabitur rhoncus iaculis dolor eu pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                
+                <div>
+                    <img src="recursos/vader.jpg"> 
+                    <img src="recursos/alien.jpg">
+                    <img src="recursos/hanibl.jpg">
+                    <img src="recursos/gremlin.jpg">
+                </div>
+            </section>
+
+            <section id="servicios"><h3>Servicios</h3>
+                <p>Aenean vitae felis pretium, rutrum est vel, maximus neque. Nullam vestibulum sem non hendrerit ultrices. Curabitur rhoncus iaculis dolor eu pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+                <section>
+                    <article><h4> Servicio 1 </h4> 
+                        <p>Aenean vitae felis pretium, rutrum est vel, maximus neque. Nullam vestibulum sem non hendrerit ultrices. Curabitur rhoncus iaculis dolor eu pulvinar.</p>
+                    </article>
+                
+                    <article><h4> Servicio 2 </h4>
+                        <p>Aenean vitae felis pretium, rutrum est vel, maximus neque. Nullam vestibulum sem non hendrerit ultrices. Curabitur rhoncus iaculis dolor eu pulvinar.</p>
+                    </article>
+                
+                    <article><h4> Servicio 3 </h4>
+                        <p>Aenean vitae felis pretium, rutrum est vel, maximus neque. Nullam vestibulum sem non hendrerit ultrices. Curabitur rhoncus iaculis dolor eu pulvinar.</p>
+                    </article>
+                
+                    <article><h4> Servicio 4 </h4>
+                        <p>Aenean vitae felis pretium, rutrum est vel, maximus neque. Nullam vestibulum sem non hendrerit ultrices. Curabitur rhoncus iaculis dolor eu pulvinar.</p>
+                    </article>
+                </section>
+            
+            </section>
+        </main>
+
+        <footer>  
+            <form id="contacto"><h3>Contacto</h3>
+                <label><p>Nombre*</p>
+                    <input type="text" required>
+                </label>
+                <label><p>Email*</p>
+                    <input type="email" name="Email" id="" required>
+                </label>
+                <label><p>Comentarios</p>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </label>
+
+                <button type="submit" value="Enviar">Enviar</button>
+            </form>
+
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11970.082224085461!2d2.183917531067377!3d41.406217362365474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a32804c40c0b%3A0xab88e13468de4871!2sBarcelona%20Activa%20-%20Seu%20Central!5e0!3m2!1sca!2ses!4v1613394137953!5m2!1sca!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </footer>
+    
+    </body>
+
+</html>

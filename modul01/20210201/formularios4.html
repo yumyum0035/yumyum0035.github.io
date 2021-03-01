@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formularios IV</title>
+        <!-- reset css 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+        -->
+        <link rel="stylesheet" href="css/form.css">
+        
+    </head>
+    <body>         
+        <h1>Formularios 4</h1>
+        <h2>Agrupacion con fieldset</h2>
+        <form>
+            <fieldset>
+                <label>Campo de texto (Valor por defecto)
+                    <input type="text">
+                </label>
+                <label>Botón
+                    <input type="button" value="Hola"> 
+                </label>
+            </fieldset>
+
+            <fieldset><legend>Campos de Tiempo</legend>
+                <label>Fecha - año, mes y día
+                    <input type="date"> 
+                </label>
+                <label>Fecha y hora, sin zona horaria (No funciona en Firefox)
+                    <input type="datetime-local">
+                </label>
+                <label>Tiempo - Hora
+                    <input type="time">
+                </label>
+                <label>Mes y Año
+                    <input type="month"> 
+                </label>
+                <label>Fecha con número de semana
+                    <input type="week"> 
+                </label>
+            </fieldset>
+        
+            <fieldset><legend>Inputs variados</legend>
+                <label>Campo de busqueda
+                    <input type="search"> 
+                </label>
+                <label>Campo de teléfono
+                    <input type="tel"> 
+                </label>
+                <label>e-mail
+                    <input type="email"> 
+                </label>
+                <label>Campo con el valor oculto (Contraseña)
+                    <input type="password"> 
+                </label>
+                <label>Campo de URL
+                    <input type="url"> 
+                </label>
+                <label>Control para especificar un color
+                    <input type="color">
+                </label>
+                <label>Número
+                    <input type="number"> 
+                </label>
+                <label>Control deslizante
+                    <input type="range" step="10" min="0" max="100"> 
+                </label>
+        
+                <label>Descargar archivo
+                    <input type="file">
+                </label>
+                <label>Input oculto
+                    <input type="hidden">
+                </label>
+            </fieldset>
+
+            <fieldset><legend>Inputs de Envio y Reseteo</legend>
+                <label>Botón de reset
+                    <input type="reset"> 
+                </label>
+                <label>Botón de envio
+                    <input type="submit"> 
+                </label>
+                <label>Imagen como botón de envío
+                    <input type="image" src="https://n1n.eu/wp-content/uploads/2020/04/spimebox-logo-512x512px-54x54.png" alt="Submit" width="20" height="20">
+                </label>          
+            </fieldset>
+        </form>
+        <h2>text area</h2>
+        <form name="cuento">
+            <label for="Cuento">¿Qué me quieres contar?</label>
+            <textarea name="cuento" id="Cuento" rows="10">
+            Cuentame un cuento.
+            </textarea>
+        </form>
+
+        <h2>Output</h2>
+        <form oninput="resultado.value=regulador.value">
+            <label>
+                <input type="range" id="regulador" min="10" max="200">
+                <output id="resultado" for="regulador"></output>
+            </label>
+        </form>
+    </body>
+</html>

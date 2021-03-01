@@ -1,0 +1,47 @@
+Exercicis amb Enllaços
+----------------------
+
+- Fes un enllaç per obrir un email
+
+- Fes un enllaç per obrir email amb varis destinataris
+
+- Fes un enllaç per obrir email amb un destinatari i un altre en copia - CC
+
+- Fes un enllaç per obrir email amb un destinatari i un altre en copia oculta - BCC
+
+- Fes un enllaç per obrir email amb subjet (asumpte)
+
+- Fes un enllaç per obrir email amb Text predefinit al cos del text
+
+- Fes un enllaç per descarregar una imatge
+
+- Fes un enllaç per descarregar una imatge canviant el nom
+
+- Fes un enllaç per descarregar una imatge canviant el nom i la terminació
+
+- Fes un enllaç per obrir un email amb:
+    - 1 Destinatari
+    - 2 destinataris en copia
+    - 1 destinatari en copia oculta
+    - Asumpte
+    - Text en el cos del missatge
+    
+    El primer parametre comença amb (?) i els segúents amb (&)
+    Multiples valors dins un parametre es separan amb (;)
+    Salt de linia al cos de text (&NewLine;)
+    Espai en blanc (%20)
+
+- Fes un enllaç per trucar a un telèfon
+
+- Fes un enllaç per enviar un missatge per telegram
+
+- Fes un enllaç per enviar un missate per WhatsApp
+
+    
+- Fes un enllaç per obrir un email amb Text predefinit al cos del text amb una frase que inclogui el següent text codificat:
+
+    Llega una niña y le pregunta a su mamá:
+    - Mamá ¿La abuela es mecánica?
+    Y la mamá le dice:
+    - No hija
+    - Enonces ¿Qué está haciendo debajo del camión?

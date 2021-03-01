@@ -1,0 +1,121 @@
+Tablas
+----------
+Conjunto de datos estructurados (tabulados) distribuidos en filas y columnas
+No debe usarse para posicionar elementos (como estructura de diseño)
+
+
+Elementos de una tabla
+
+<table> tabla
+<tr> Fila (Row)
+<td> Celda
+
+<caption> título de una tabla
+<th> Celda de cabecera
+
+<thead> Agrupa el contenido de la cabecera
+<tbody> Agrupa el contenido del cuerpo
+<tfoot> Agrupa el contenido del pie
+
+<colgroup> Grupo de columnas
+<col> Columna dentro de un elemento <colgroup>
+
+
+Atributos para tablas
+------
+headers (ID) Celda de cabecera con las que está relacionada una celda (accesibilidad)
+    Ej: <th id="nombre">Nombre</th>
+        <td headers="nombre">Alfredito</td>  
+
+
+colspan - (número) Número de columnas que abarca una celda
+    Ej: <td colspan="2"> Contenido de la celda </td>
+
+
+rowspan (número) Número de filas que debe abarcar una celda
+    Ej: <td rowspan="2">  Contenido de la celda </td>
+
+scope - Especifica si una celda de encabezado es un encabezado de una columna, fila o grupo de columnas o filas. (accesibilidad)
+    Ej: <th scope="col">
+    Valores:
+    col Encabezado de una columna
+    row Cabecera de una fila
+    colgroup Cabecera de un grupo de columnas
+    rowgroup Cabecera de un grupo de filas
+
+
+
+-------------------------------------------
+- Ejercicio 1 - Tabla Mínima 1
+
+        Celda1     Celda2
+        Celda3
+
+-------------------------------------------
+- Ejercicio 2 - Tabla Mínima 2
+
+            Celda1     Celda2
+                       Celda4
+
+-------------------------------------------
+- Ejercicio 3 - Tabla Mínima 3
+
+            Celda1     Celda2
+            Celda3     Celda4
+
+-------------------------------------------
+- Ejercicio 4 - Tabla con título
+
+            Título de la tabla
+            Celda1       Celda2
+            Celda3       Celda4            
+
+-------------------------------------------
+- Ejercicio 5 - Tabla con celdas de cabecera
+
+            Celda cabecera 1    Celda cabecera 2
+            Celda1              Celda2
+            Celda3              Celda4 
+
+-------------------------------------------
+- Ejercicio 6 - Tabla con celdas relacionadas con celdas de cabecera
+
+            Título de la tabla
+            Celda cabecera 1    Celda cabecera 2
+            Celda1              Celda2
+            Celda3              Celda4 
+
+-------------------------------------------
+Ejercicio 7 - Tabla con celdas abarcando filas
+
+            Título de la tabla
+            Celda cabecera 1    Celda cabecera 2    Celda cabecera 2
+            |---      Celda1 y Celda2       ---|    Celda3
+            Celda4              Celda5              Celda6 
+
+-------------------------------------------
+Ejercicio 8 - Tabla con celdas abarcando filas
+
+            Título de la tabla
+            --------------------------------------------------------
+            Celda cabecera 1    Celda cabecera 2    Celda cabecera 2
+            --------------------------------------------------------
+            Celda1              Celda2              Celda3
+              y                 ------------------------------------
+            Celda4              Celda5              Celda6
+            --------------------------------------------------------
+            Celda7              Celda8              Celda9            
+
+-------------------------------------------
+Ejercicio 9 - Tabla con celdas abarcando filas y columnas
+
+            Título de la tabla
+            --------------------------------------------------------
+            Celda cabecera 1    Celda cabecera 2    Celda cabecera 2
+            --------------------------------------------------------
+            |---      Celda1 y Celda2       ---|    Celda3
+                             y                      ----------------
+            |---      Celda3 y Celda4       ---|    Celda6
+            --------------------------------------------------------
+            Celda7              Celda8              Celda9            
+

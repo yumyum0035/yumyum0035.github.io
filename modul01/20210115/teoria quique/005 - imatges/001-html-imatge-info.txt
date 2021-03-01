@@ -1,0 +1,41 @@
+
+IMATGES web
+-----------------------
+Sempre son en color RGB / Hexadecimal mai en CMYK 
+
+Imatges de mapa de bits
+    La resolució no importa, el que es important es el número de pixels
+
+Imatges vectorials
+
+
+HTML
+-----
+<img>	Imatge - inline-block;
+    
+    Mapa de bits
+    ------------
+    GIF         - Animat / Transparencia / Des de 1bit (2 colors) Fins a 8bits (256 colors)
+    JPG / JEPG  - Compressio amb perduda - No es recomana recomprimirles ni remodificarles - 24bits
+    PNG         - Transparencia - 32bits
+    Webp        - Animat / Transparencia - Compressió amb perduda i sense
+    
+    Vectorials
+    ----------
+    SVG         - Transparencia - Qualsevol mida (no tenen resolució)
+
+<map>	Mapa d'imatge ( en desus)
+    <area>	Area dins un mapa d'imatge
+
+<figure>	Contenidor per imatges amb peu d'imatge - SEO
+<figcaption>	Defineix un peu d'matge per a un element <figure>
+    
+    <figure>
+        <img src="" alt="">
+        <figcaption> </figcaption>
+    </figure>
+    
+    
+<picture>	Container per multiples imatges
+<canvas>	S'utilitza per dibuixar mitjançant scripts (generalment JavaScript)
+<svg> Imatge vectorial dins el codi

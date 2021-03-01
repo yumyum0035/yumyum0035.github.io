@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <title>Jugando con variables</title>
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <div class="contenedor">
+         <div class="header">
+            <p class="logo">Curso JavaScript - Albert Corral</p>
+         </div>
+         <div class="contenido">
+            <div class="principal">
+               <h1>Jugando con las variables</h1>
+               <p id="paragraf"></p>
+            </div>
+         </div>
+      </div>
+      <script>
+         var nombre = prompt('Hola, ¿Cómo te llamas?');
+         var apellido = prompt('¿Y tu apellido?');
+         var edad = parseInt(prompt('¿Cuantos años tienes?'));
+         var nuevaEdad = parseInt(prompt('¿Cuantos años querrías quitarte?'));
+         var edadOriginal = edad;
+         edad -= nuevaEdad;
+         
+         alert('Se te ve muy bien a pesar de tus ' + edad + ' años :^)');
+         
+         document.getElementById("paragraf").innerHTML = "<p>Tu nombre es "+nombre+" "+apellido+" y quieres tener "+edad+" años, pero tienes "+edadOriginal+" años en realidad.</p>";
+   
+         console.log("mostra el nom, cognom i edat original: ", nombre, apellido, edadOriginal);
+      </script>
+   </body>
+</html>

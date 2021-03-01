@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici Tablas</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Tablas</h1>
+        
+        <h2>Ejercicio 1</h2>
+        <table>
+            <tr>
+                <td>Celda 1</td>
+                <td>Celda 2</td>
+            </tr>
+            <tr>
+                <td>Celda 3</td>
+            </tr>
+        </table>
+
+        <h2>Ejercicio 2</h2>
+        <table>
+            <tr>
+                <td>Celda 1</td>
+                <td>Celda 2</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Celda 4</td> 
+            </tr>
+        </table>
+
+        <h2>Ejercicio 3</h2>
+        <table>
+            <tr>
+                <td>Celda 1</td>
+                <td>Celda 2</td>
+            </tr>
+            <tr>
+                <td>Celda 3</td>
+                <td>Celda 4</td> 
+            </tr>
+        </table>
+
+        <h2>Ejercicio 4</h2>
+        <table>
+            <caption>Tabla con título</caption>
+            <tr>
+                <td>Celda 1</td>
+                <td>Celda 2</td>
+            </tr>
+            <tr>
+                <td>Celda 3</td>
+                <td>Celda 4</td>
+            </tr>
+        </table>
+
+        <h2>Ejercicio 5</h2>
+        <table>
+            <caption>Tabla con título y cabeceras</caption>
+            <tr>
+                <th>Cabecera 1</th>
+                <th>Cabecera 2</th>
+            </tr>
+            <tr>
+                <td>Celda 1</td>
+                <td>Celda 2</td>
+            </tr>
+            <tr>
+                <td>Celda 3</td>
+                <td>Celda 4</td>
+            </tr>
+        </table>
+
+        <h2>Ejercicio 6</h2>
+        <table>
+            <caption>Tabla con título y cabeceras relacionadas</caption>
+            <!-- 
+                Esto hace que las celdas esten relacionadas con su correspondiente cabecera usando los ids
+             -->
+            <tr>
+                <th id="header1">Cabecera 1</th>
+                <th id="header2">Cabecera 2</th>
+            </tr>
+            <tr>
+                <td headers="header1">Celda 1</td>
+                <td headers="header2">Celda 2</td>
+            </tr>
+            <tr>
+                <td headers="header1">Celda 3</td>
+                <td headers="header2">Celda 4</td>
+            </tr>
+        </table>
+
+        <h2>Ejercicio 7</h2>
+        <table>
+            <caption>Tabla con celdas abarcando filas (o columnas en horizontal)</caption>
+            <tr>
+                <th>Celda cabecera 1</th>
+                <th>Celda cabecera 2</th>
+                <th>Celda cabecera 3</th>
+            </tr>
+            <tr>
+                <td colspan="2">Celda 1 y celda 2</td>
+                <td>Celda 3</td>
+            </tr>
+            <tr>
+                <td>Celda 4</td>
+                <td>Celda 5</td>
+                <td>Celda 6</td>
+            </tr>
+        </table>
+
+        <h2>Ejercicio 8</h2>
+        <table>
+            <caption>Tabla con celdas abarcando columnas (o filas en vertical)</caption>
+            <tr>
+                <th>Celda cabecera 1</th>
+                <th>Celda cabecera 2</th>
+                <th>Celda cabecera 3</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Celda 1 y<br> Celda 4</td>
+                <td>Celda 2</td>
+                <td>Celda 3</td>
+            </tr>
+            <tr>
+                <td>Celda 5</td>
+                <td>Celda 6</td>
+            </tr>
+            <tr>
+                <td>Celda 7</td>
+                <td>Celda 8</td>
+                <td>Celda 9</td>
+            </tr>
+        </table>
+
+        <h2>Ejercicio 9</h2>
+        <table>
+            <caption>Tabla con celdas abarcando filas y columnas</caption>
+            <tr>
+                <th>Celda cabecera 1</th>
+                <th>Celda cabecera 2</th>
+                <th>Celda cabecera 3</th>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2">Celda 1 y Celda 2 <br>y<br> Celda 4 y Celda 5</td>
+                <td>Celda 3</td>
+            </tr>
+            <tr>
+                <td>Celda 6</td>
+            </tr>
+            <tr>
+                <td>Celda 7</td>
+                <td>Celda 8</td>
+                <td>Celda 9</td>
+            </tr>
+        </table>
+
+        <h2>Tabla final</h2>
+        <table>
+            <caption>Ultima tabla</caption>
+            <tr>
+                <th>T</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>Celda 1</td>
+                <td>Celda 2</td>
+                <td>Celda 3</td>
+                <td>Celda 4</td>
+                <td>Celda 5</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>Celda 6</td>
+                <td>Celda 7</td>
+                <td>Celda 8</td>
+                <td>Celda 9</td>
+                <td>Celda 10</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Celda 11</td>
+                <td>Celda 12</td>
+                <td>Celda 13</td>
+                <td>Celda 14</td>
+                <td>Celda 15</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>Celda 16</td>
+                <td>Celda 17</td>
+                <td>Celda 18</td>
+                <td>Celda 19</td>
+                <td>Celda 20</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>Celda 21</td>
+                <td>Celda 22</td>
+                <td>Celda 23</td>
+                <td>Celda 24</td>
+                <td>Celda 25</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>

@@ -1,0 +1,33 @@
+btw tablas last: https://www.tablesgenerator.com/html_tables
+
+---------------
+---------------
+Formularios
+---------------
+---------------
+Un formulario es un elemento HTML para añadir datos de entrada del usuario.
+
+1. Estructura básica
+-------------------
+
+<form> Etiqueta que engloba el formulario
+    Ej:<form  action="enviar.php" method="GET">
+              Acción del botón    Metodo de Envio (GET/POST)
+
+<label> Define la etiqueta de un <input>
+    Ej 1: <label for="nombre">Nombre</label>
+          <input type="text" id="nombre">
+    
+    Ej 2: <label> Nombre <input type="text"> </label>
+
+<input> Control de entrada
+    Ej: <input type="text">
+
+<button> Botón donde hacer clic para enviar los datos
+    Ej: <button>Enviar</button>
+
+2. Atributos de <input> 
+-----------------------
+
+<input type="text"> Campo de texto (Valor por defecto)
+<input type="button"> Botón - No confundir con el botón de envío <button>

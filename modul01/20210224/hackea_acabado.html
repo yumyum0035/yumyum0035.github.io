@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    -->
+
+    <title>Hackea - Sientete como en casa</title>
+    <meta name="description" content="Somos una agencia digital que trabaja con clientes en todo el mundo para crear proyectos inolvidables. Trabajando juntos, ayudamos a las marcas a las empresas emergentes a alcanzar su máximo potencial.">
+
+<!-- reset css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+    
+<style>
+
+/*****  ESTRUCTURA *****/  
+* {box-sizing: border-box;}
+
+body {max-width: 800px; margin: 0 auto;} 
+
+header { 
+    z-index: 100; position: relative;
+
+    padding: 20px; 
+    height: 142px;
+    }
+
+video { 
+    width: 100%;
+    margin-top:-142px;
+}
+
+main, footer { padding: 40px 20px 20px 20px;}
+
+li { padding: 0 10px; }
+
+h1, h2, h3, p { 
+    /* mantiene la medida del contenedor padre incluso aunque sea mayor */
+    width: 600px; max-width: 100%; 
+    display: inline-block; 
+    }
+
+section { 
+    padding: 40px 0 20px 0 ;
+    /* hack para eliminar espacion a los elemntos en linea */
+    font-size:0px;
+}
+section:first-of-type { padding: 40px 20px 20px 20px; }
+
+img {  width: 360px; margin:20px;}
+
+section:first-of-type img {  width: 340px;}
+
+div { 
+    margin:0 40px 40px 0 ; 
+    width: 340px; 
+    display: inline-block;
+    padding: 20px;
+    
+    }
+
+div:nth-of-type(2n+1) { margin-top: 20px; margin-left:40px; }
+
+div img { width: 60px;}
+
+li { display: inline; }
+
+h1, h2, h3, p { margin-bottom: 20px; }
+
+input, textarea {width: 100%;}
+
+iframe { width: 600px; height: 450px; }
+
+/*****  TIPOGRAFIA *****/  
+
+html { font-size:10px; 
+       font-family: Arial, Helvetica, sans-serif;
+       text-align: center;
+     }
+
+li { text-transform: uppercase;}
+h1 { font-size: 5rem;}
+h2 { font-size: 4rem;}
+h3 { font-size: 3rem;}
+
+p { font-size: 2rem; text-align: left;}
+
+li, input, textarea, button {font-size: 2rem; }
+
+form p:last-child { text-align: right; }
+
+/*****  ESTETICA *****/  
+
+html { background: grey; }
+body { background: #ffffff; }
+
+a:link, a:visited { text-decoration: none; color: Black;}
+a:hover, a:active { color:#0051ba;}
+
+section:first-of-type   {background: #0051BA; color: white;}
+
+div { background: #FFDA1A; color: black; }
+
+div:nth-of-type(1) { background: #0051ba; color: white;}
+div:nth-of-type(4) { background: #0051ba; color: white;}
+
+footer {color: white; background: black;}
+
+input, textarea, button { outline: none; }
+
+input, textarea { 
+    background: #222; color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 6px;
+    } 
+
+button { 
+    background: black; color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+}
+
+button:hover, button:active { background: white; color: black; }
+
+</style>
+    
+</head>
+<body>
+    <header>
+        <img src="recursos/hackea-logo.svg" alt="hackea - logotipo">
+        <nav>
+            <ul>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+        <video  muted autoplay  loop poster="recursos/girafa.png">
+            <source src="recursos/girafa.webm" type="video/webm">
+            <source src="recursos/girafa.mp4" type="video/mp4">
+        </video>
+    <main>
+        <h1>Siéntete como en casa</h1>
+        <p>Somos una agencia digital que trabaja con clientes en todo el mundo para crear proyectos inolvidables. Trabajando juntos, ayudamos a las marcas a las empresas emergentes a alcanzar su máximo potencial.</p>
+    </main>
+    <section ID="proyectos">
+        <h2>Proyectos</h2>
+        <p>Somos una agencia digital que trabaja con clientes en todo el mundo para crear proyectos inolvidables. Trabajando juntos, ayudamos a las marcas a las empresas emergentes a alcanzar su máximo potencial.</p>
+        <img src="recursos/vader.jpg" alt="Väder">
+        <img src="recursos/alien.jpg" alt="Älien">
+        <img src="recursos/hanibl.jpg" alt="Hänibl">
+        <img src="recursos/gremlin.jpg" alt="Gremlin">
+    </section>
+    <section ID="servicios">
+        <h2>Servicios</h2>
+        <p>Somos una agencia digital que trabaja con clientes en todo el mundo para crear proyectos inolvidables. Trabajando juntos, ayudamos a las marcas a las empresas emergentes a alcanzar su máximo potencial.</p>
+
+        <div>
+            <img src="recursos/ducha.png" alt="ducha">
+            <h3>Servicio 1</h3>
+            <p>Aenean vitae felis pretium, rutrum est vel, maximus neque. Nullam vestibulum sem non hendrerit ultrices. Curabitur rhoncus iaculis dolor eu pulvinar.</p>
+        </div>
+
+        <div>
+            <img src="recursos/pony-n.png" alt="pony">
+            
+            <h3>Servicio 2</h3>
+            <p>Aenean vitae felis pretium, rutrum est vel, maximus neque. Nullam vestibulum sem non hendrerit ultrices. Curabitur rhoncus iaculis dolor eu pulvinar.</p>
+        </div>
+
+        <div>
+            <img src="recursos/butaca-n.png" alt="butaca">
+            <h3>Servicio 3</h3>
+            <p>Aenean vitae felis pretium, rutrum est vel, maximus neque. Nullam vestibulum sem non hendrerit ultrices. Curabitur rhoncus iaculis dolor eu pulvinar.</p>
+        </div>
+
+        <div>
+        
+            <img src="recursos/cama.png" alt="cama">
+            <h3>Servicio 4</h3>
+            <p>Aenean vitae felis pretium, rutrum est vel, maximus neque. Nullam vestibulum sem non hendrerit ultrices. Curabitur rhoncus iaculis dolor eu pulvinar.</p>
+        </div>
+
+    </section>
+    <footer  ID="contacto">
+        <h2>Contacto</h2>
+        <form action="#" method="get">
+            <label>
+                <p>Nombre*</p>
+                <p><input type="text" name="nombre" required></p>
+            </label>
+            <label>
+                <p>Email*</p>
+                <p><input type="email" name="email" required></p>
+            </label>
+            <label>
+                <p>Comentario</p>
+                <p><textarea name="comentario" id="" cols="30" rows="10"></textarea></p>
+            </label>
+            <p><button type="submit">Enviar</button></p>
+        </form>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2992.694117028817!2d2.192123451788723!3d41.40244877916086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a33d3b71de05%3A0xbb83ff380d17f7fe!2sCibernarium!5e0!3m2!1ses-419!2ses!4v1613408052162!5m2!1ses-419!2ses" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</footer>
+</body>
+</html>

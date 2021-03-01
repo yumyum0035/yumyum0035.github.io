@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main>
+        <h1>Video</h1>
+        <h2>Atributos</h2>
+        <p>autoplay - controls - loop - muted - poster="" - preload="auto-metadata-none"</p>
+        <video controls >
+            <source src="recursos/mov_bbb-video-320x176.ogv" type="video/ogg">
+            <source src="recursos/mov_bbb-video-320x176.webm" type="video/webm">
+            <source src="recursos/mov_bbb-video320x176.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+        
+        <h2>Poster</h2>
+        <p>autoplay - controls - loop - muted - poster="" - preload="auto-metadata-none"</p>
+        <video controls poster="recursos/portada-320x176.jpg">
+            <source src="recursos/mov_bbb-video-320x176.ogv" type="video/ogg">
+            <source src="recursos/mov_bbb-video-320x176.webm" type="video/webm">
+            <source src="recursos/mov_bbb-video320x176.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>   
+        
+        <h2>Track</h2>
+        <p>autoplay - controls - loop - muted - poster="" - preload="auto-metadata-none"</p>
+        <video controls preload="none">
+            <source src="recursos/mov_bbb-video-320x176.ogv" type="video/ogg">
+            <source src="recursos/mov_bbb-video-320x176.webm" type="video/webm">
+            <source src="recursos/mov_bbb-video320x176.mp4" type="video/mp4">
+            <track src="recursos/movie-en.vtt" kind="subtitles" srclang="en" label="English">
+            <track src="recursos/movie-es.vtt" kind="subtitles" srclang="es" label="Castellano">
+            Tu navegador no soporta la etiqueta de video.
+        </video>   
+    </main>
+
+</body>
+</html>

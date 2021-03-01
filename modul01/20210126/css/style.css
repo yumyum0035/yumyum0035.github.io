@@ -1,0 +1,22 @@
+html {
+    font-size: 16px; 
+    /*la mida sempre es declara en pixels i al html perque pugui agafar la mida als rems, AIXO ES STANDARD, a partir d'ara es fa SEMPRE. d'aquesta manera el html es la mida de la qual les altres depenen, i per tant nomes s'ha de tocar aqui.*/
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+}
+
+h1, h2 {
+    font-size: 2rem;
+}
+
+img {
+    max-width: 50%;
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 2rem;
+}

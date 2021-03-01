@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/7fc3a92343.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <img src="img/logoFartera.svg" alt="logo Fartera">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a class="select" href="index.html">inicio</a></li>
+            <li><a href="#">historia</a></li>
+            <li><a href="#">servicios</a></li>
+            <li><a href="#">contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <video poster="img/video.jpg" controls>
+            <source src="video/cocina.mp4" type="video/mp4">
+            <source src="video/cocina.webm" type="video/webm">
+            <source src="video/cocina.ogv" type="video/ogg">
+        </video>
+        <section class="gallery">
+            <hgroup> <!-- agrupación de cabeceras -->
+                <h2>Nuestras especialidades</h2>
+            </hgroup>
+                <div class="image"> <!-- icono de plus con css -->
+                    <span class="plus-icon icon-position"></span>
+                    <figure>
+                        <img src="img/horno.jpg" alt="Cosas al horno">
+                        <figcaption class="rectangle">Cosas al horno</figcaption>
+                    </figure>
+                </div>
+                <div class="image"> <!-- icono con html -->
+                    <img class="icon-position" src="img/plusicon.svg" alt="+">
+                    <figure>
+                        <img src="img/ensaladas.jpg" alt="Ensaladas frías">
+                    <figcaption class="rectangle">Ensaladas frías</figcaption>
+                    </figure>
+                </div>
+                <div class="image">
+                    <img class="icon-position" src="img/plusicon.svg" alt="+">
+                    <figure>
+                        <img src="img/postres.jpg" alt="Postres de temporada">
+                    <figcaption class="rectangle">Postres de temporada</figcaption>
+                    </figure>
+                </div>
+                <div class="image">
+                    <img class="icon-position" src="img/plusicon.svg" alt="+">
+                    <figure>
+                        <img src="img/caldos.jpg" alt="Caldos y sopas">
+                        <figcaption class="rectangle">Caldos y sopas</figcaption>
+                    </figure>
+                </div>
+                <div class="image">
+                    <img class="icon-position" src="img/plusicon.svg" alt="+">
+                    <figure>
+                        <img src="img/pasta.jpg" alt="Pasta de la casa">
+                        <figcaption class="rectangle">Pasta de la casa</figcaption>
+                    </figure>
+                </div>
+                <div class="image">
+                    <img class="icon-position" src="img/plusicon.svg" alt="+">
+                    <figure>
+                        <img src="img/snacks.jpg" alt="Tentempiés frugales">
+                        <figcaption class="rectangle">Tentempiés frugales</figcaption>
+                    </figure>
+                </div>
+
+        </section>
+        <section class="formulario">
+            <h2>Pide presupuesto</h2>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre">
+
+                <label for="company">Empresa</label>
+                <input type="text" id="company">
+
+                <label for="empleados">Número de Empleados</label>
+                <select id="empleados">
+                    <option value="10">10</option>
+                    <option value="20" selected>20</option>
+                    <option value="30">30</option>
+                </select>
+
+                <label for="correo">E-mail de contacto</label>
+                <input type="email" id="correo">
+
+                <div class="politic"><input type="checkbox" id="politica" class="check"><label for="politica" class="small-text">He leído y acepto la <a href="#" title="privacidad">política de privacidad</a></label></div>
+                
+
+                <button type="submit">Contactar</button>
+            </form>
+        </section>
+    </main> 
+
+    <footer>
+            <ul class="footer">
+                <li>&#169; 2020 - Fartera Catering.</li>
+                <li>c/ Llacuna 162, 08018 Barcelona</li>
+                <li>Telf: 93 542 65 65</li>
+                <li><a href="https://twitter.com"><span class="fab fa-twitter-square"></span></a>
+                    <a href="https://instagram.com"><span class="fab fa-instagram-square"></span></a>
+                    <a href="https://facebook.com"><span class="fab fa-facebook-square"></span></a>
+                </li>
+            </ul>
+    </footer>
+
+</body>
+</html>

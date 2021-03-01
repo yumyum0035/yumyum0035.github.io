@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="ca">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Position block</title>
+
+<style>
+    html { font-size: 20px; }
+    body { 
+        margin: 0px;
+        font-family: Helvetica, sans-serif;
+    }
+    .contenidor { background: #f1f1f1; }
+    
+    div { 
+        padding: 40px;
+        background: pink;
+    }
+
+    /* position
+        static (per defecte)
+        relative  (relatiu a la seva posició)
+        absolute (posicionat respecte al ascendent si te position absolute o relative)
+        fixed (Posicionat respecte al viewport)
+        sticky (Alterna entre relative i fixed - No funicona inline)
+    
+       Propietats de posició:
+        Top / Right / Bottom / Left
+   */
+    /* 
+        .posicionat { 
+            background: gold;
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+    */
+
+    .positionStuff {
+        padding: 10px;
+        background: #43c0bb;
+        color: white;
+    }
+
+    .sticky {
+        position: sticky;
+        top: 0;
+        text-align: center;
+    }
+
+    .fixed {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .positionStuff a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .positionStuff a:hover {
+        color: #febe5d;
+    }
+
+    #destacado {
+        background-color: silver;
+        color: white;
+    }
+
+</style>
+
+</head>
+
+<body>
+    <h1>Position: Sticky and Fixed</h1>
+    <header class="sticky positionStuff">
+        <nav>
+            <a href="#">Enlace 1</a> ·
+            <a href="#destacado">Enlace 2</a> ·
+            <a href="#">Enlace 3</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenidor">
+            <p>Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam. Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.</p>
+
+            <p>Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam. Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.</p>
+
+            <p>Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam. Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.</p>    
+
+            <p>Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam. Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.</p>
+
+            <p>Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam. Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.</p>       
+
+            <p>Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam. Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.</p>
+
+            <p>Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam. Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.</p>  
+            <p>Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam. Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.</p>
+
+            <p id="destacado">Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam. Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.</p>    
+
+            <p>Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam. Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.</p>
+
+            <p>Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam. Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.</p>       
+
+            <p>Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam. Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.</p>
+
+            <p>Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam. Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.</p> 
+            <p>Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam. Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.</p>
+
+            <p>Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam. Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.</p>       
+
+            <p>Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam. Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.</p>
+
+            <p>Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam. Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.</p>  
+        </div>
+    </main>
+    
+    <footer class="fixed positionStuff">
+        <a href="#">Enlace 1</a> ·
+        <a href="#destacado">Enlace 2</a> ·
+        <a href="#">Enlace 3</a>
+    </footer> 
+</body>
+</html>

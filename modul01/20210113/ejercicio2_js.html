@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Tasca d'avui:
+Crea una petita aplicació que et pregunti la temperatura en ºC i la converteixi en ºF.
+La conversió ha d'aparèixer a l'HTML amb un format creatiu. -->
+
+<h1>Conversor Celsius a Farenheit</h1>
+<main class="border">
+    <img src="https://media0.giphy.com/media/3o6MbmEH8cJPzurlAc/source.gif" alt="Homer Simpson chanting USA"><br>
+    <p id="result"></p>
+    <!-- EXTRA: añadir botones que aumenten o reduzcan la temperatura celcius y se actualice al apretar el botón -->
+    <div class="botones">
+        <button id="buttonHigher" class="red" onclick="sumarGraus()">+</button>
+        <button id="buttonLower" class="blue" onclick="restarGraus()">-</button>
+    </div>
+
+    <!-- ejercicio 2 -->
+    <h2>Cambiar atributos</h2>
+
+    <p>Cambiando los valores de los atributos podemos interactuar con la página</p>
+    <p>En este caso, cambiamos la fuente de la imagen</p>
+
+
+    <button onClick='document.getElementById("myImage").src="img/calor.png";'>Subir temperatura</button> 
+    <!-- aqui en lugar de innerHTML se usa source (.src) solo para cambiar la imagen -->
+
+    <img id="myImage" src="img/termometro.jpg" style="width:100px"> 
+
+    <button onClick='document.getElementById("myImage").src="img/frio.png";'>Bajar temperatura</button>
+
+</main> 
+
+<script src="js/source.js"></script>
+</body>
+</html>

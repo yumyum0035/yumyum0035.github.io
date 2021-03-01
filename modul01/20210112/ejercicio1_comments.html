@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <title>Jugando con variables</title>
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <div class="contenedor">
+         <div class="header">
+            <p class="logo">Curso JavaScript - Albert Corral</p>
+         </div>
+         <div class="contenido">
+            <div class="principal">
+               <h1>Jugando con las variables</h1>
+               <p id="paragraf">hello</p>
+            </div>
+         </div>
+      </div>
+      <script>
+         //Vídeo recomendado https://www.youtube.com/watch?v=f719B0LDpiE&list=PLU8oAlHdN5BmpobVmj1IlneKlVLJ84TID&index=6
+         /*
+         var nombre; //Preguntar el nom amb prompt
+         var apellido;//Preguntar el cognom amb prompt
+         var edad;//Preguntar edat
+         var nuevaEdad;//Preguntar quants anys es voldria restar
+         edad // registrar la nova edat
+         */
+
+         // Mostrar alert amb el text "Se te va muy bien a pesar de tus "XXXX " años");
+
+         /*Mostrar, al html l'estructura
+            <p>
+               nombre apellido
+            </p>
+         */
+         var nombre = prompt('Hola, ¿Cómo te llamas?');
+         var apellido = prompt('¿Y tu apellido?');
+         var edad = parseInt(prompt('¿Cuantos años tienes?')); //parse Int fuerza a convertir el prompt a int
+         var nuevaEdad = parseInt(prompt('¿Cuantos años querrías quitarte?')); //tambien existe parseFloat, que lo convierte en float
+         var edadOriginal = edad; //aqui guardamos la primera edad que puso el usuario antes de quitar los años que no quiera.
+         edad -= nuevaEdad;
+         
+         alert('Se te ve muy bien a pesar de tus ' + edad + ' años :^)'); //tambien se puede usar como window.alert(); pero el window no cal ya.
+         
+         /*
+            //document.write("<p>");
+            //document.write(nombre+" "+apellido);
+            //document.write("</p>");
+            
+            document.write añade cosas a partir de donde esta la funcion, en este caso un <p> las variables y el </p> que cierra van despues de todo asique no se nota.
+            si se pone el doc.write dentro de un botón se puede cargar toda la pagina :O
+         */
+
+         document.getElementById("paragraf").innerHTML = "<p>Tu nombre es "+nombre+" "+apellido+" y quieres tener "+edad+" años, pero tienes "+edadOriginal+" años en realidad.</p>";
+         //no se carga el documento que hay, pero sustituye lo que hay en el tag <p> con id paragraf por lo que he puesto dentro.
+         console.log("mostra el nom, cognom i edat original: ", nombre, apellido, edadOriginal);
+         
+      </script>
+   </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesta de la compra en javascript</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/7fc3a92343.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <h1>Lista de la compra</h1>
+
+        <div id="listaParent">
+            <ul id="listaCompra"></ul>
+        </div>
+
+        <p id="total"></p>
+        
+        <div class="container-total">
+            <p>Total</p>
+            <p id="suma"></p>
+        </div>
+
+        <div class="container">
+            <button onclick="nuevoElemento();" class="add">Añadir elemento</button>
+            <button onclick="eliminarElemento();" class="remove">Elimina el último elemento</button>
+        </div>
+    </main>
+
+<!-- Hacer que el carrito calcule el precio de los productos, haciendo dos arrays separados
+    en el mismo indice de platano debe estar el precio de platanos [3] 
+
+    extra-extra: añadir un buscador de prudcto para borrar (bucles) :thonk:
+
+-->
+
+<script src="js/source.js"></script>
+</body>
+</html>

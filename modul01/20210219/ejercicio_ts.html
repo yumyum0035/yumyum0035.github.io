@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici objectes typescript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main><h1>Ejercicio Vehiculos</h1>
+        <article id="carInfo">
+            <form>
+                <fieldset><legend>Car information</legend>
+                    <label>Plate
+                        <input type="text" name="carPlate" id="plate" pattern="[0-9]{4}[A-Z]{3}" required>
+                    </label>
+                    <label>Brand
+                        <input type="text" name="carBrand" id="brand">
+                    </label>
+                    <label>Color
+                        <input type="text" name="carColor" id="color">
+                    </label>
+                </fieldset>
+            </form>
+            <button id="carGenerate">Create Car</button>
+        </article>
+
+        <section class="results">
+            <p id="carPlateResult"></p>
+            <p id="carBrandResult"></p>
+            <p id="carColorResult"></p>
+        </section>
+
+        <article id="wheels">
+            <form>
+                <fieldset><legend>Wheels information</legend>
+                    <label>Wheel Brand
+                        <input type="text" name="marcaRuedas" id="marcaRueda">
+                    </label>
+                    <label>Wheel diameter
+                        <input type="number" name="diametroRuedas" id="diametroRueda" min="0.4" max="2" required>
+                    </label>
+                    <p>Note: Please note that wheel diameter must be between 0.4 and 2.</p>
+                </fieldset>
+            </form>
+            <button id="addWheels">Add Wheels</button>
+        </article>
+        
+        <section class="results">
+            <p id="wheelBrandRes"></p>
+            <p id="wheelDiameterRes"></p>
+        </section>
+    </main>
+
+    <script src="ts/source.js"></script>
+</body>
+</html>

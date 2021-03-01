@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclases formularios</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main><h1>Pseudoclases de formulario</h1>
+    <form action="">
+        <input type="radio" value="Pequeño" id="pequeño" name="tamaño"> 
+        <label for="pequeño">Pequeño</label>
+
+        <input type="radio" value="Mediano" id="mediano" name="tamaño"> 
+        <label for="mediano">Mediano</label>
+
+        <input type="radio" value="Grande" id="grande" name="tamaño"> 
+        <label for="grande">Grande</label>
+
+        <p><label>Nombre: 
+            <input type="text" disabled value="Popeye">
+        </label></p>
+
+        <p><label>Nombre: 
+            <input type="text" id="rosario" required>
+        </label></p>
+        
+        <p><label>Altura: 
+            <input type="number" min="1" max="10" value="14">
+        </p>
+        
+        <p><label>Email: 
+            <input type="email" name="email" id="email">
+        </label></p>
+        
+        <p><label>Nombre: 
+            <input type="text" name="Brutus" readonly>
+        </label></p>
+        
+        <p><button type="submit">Enviar</button></p>
+    </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,97 @@
+@import url('https://meyerweb.com/eric/tools/css/reset/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+main {
+    margin: 30px auto;
+    width: 500px;
+}
+
+article {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+h1, h2 {
+    margin: 20px;
+    text-align: center;
+    font-family: 'Bodoni Moda', serif;
+}
+
+p {
+    margin: 5px;
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.2rem;
+}
+
+input, button {
+    margin: 5px 15px;
+}
+
+button {
+    background-color: #ffcccc;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    padding: 10px;
+    align-self: center;
+}
+
+input {
+    border: solid 2px #ffcccc;
+    border-radius: 5px;
+    padding: 5px;
+    width: 500px;
+}
+
+#today {
+    text-align: center;
+}
+
+#dateFormat {
+    color: white;
+    background-color: #ffcccc;
+    text-align: center;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+table {
+    margin: 20px;
+}
+
+th, td {
+    border-spacing: 5px; /* se usa para hacer espacios entre tablas, porque margin no funciona */
+    padding: 5px;
+    border: solid 2px white;
+    text-align: center;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+td {
+    background-color: #ffcccc;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    -->
+
+    <title>Selectores básicos</title>
+
+<!-- reset css
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+ -->
+
+<style>
+
+/*** test - selector de todos los elementos 
+* {outline: 1px solid orange; padding: 10px;}
+***/
+
+
+
+/* Selector del elemento raiz - normalmente HTML   
+:root { background: Cornsilk; }  
+ */    
+
+/* Selector de un elemento html 
+p { background: orange;}   
+ */   
+    
+/* Selector de clase 
+.clase1 { background: pink;}   
+ */
+
+/* Selector de ID   
+#identificador { background: yellow;}   
+ */
+
+   
+/* Multiselector (,) menos en el ultimo elemento   
+main, div { background: grey;}   
+*/
+
+/* selector de descendiente (espacio)     
+main p {background: Azure;} 
+*/ 
+    
+/* selector de elemento HTML con una clase determinada 
+p.clase1   {background: Aquamarine;} 
+*/
+    
+/* selector de varias clases de un solo elemento 
+.clase1.clase2   {background: DeepPink;} 
+*/
+    
+
+
+::selection { color: red;}
+    
+
+</style>
+
+
+
+</head>
+    
+<body>
+    <h1 class=" clase1 ">Selectores CSS básicos<br>Selectores CSS básicos</h1>
+    
+    <p id="identificador">Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.
+    </p>
+
+    <p class=" clase1 clase2 ">Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.
+    </p>
+    
+    <main>
+        
+        <p class=" clase1  ">Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.
+        </p>
+
+        <p class="  clase2 ">Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.
+        </p> 
+        
+        <div>
+
+            <p>Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.
+            </p>
+
+        </div>
+
+        <div>
+
+            <p>Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.
+            </p>
+            
+             <p>Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.
+            </p>  
+            
+            <p>Lorem ipsum dolor ssit amet consectetur adipisicing elit. Maiores vero temporibus molestias repellat et recusandae qui at aspernatur minus. Accusamus quas laudantium culpa distinctio dicta, sed aperiam tenetur reiciendis nam.
+            </p>  
+            
+        </div>
+        
+    </main>
+
+</body>
+</html>

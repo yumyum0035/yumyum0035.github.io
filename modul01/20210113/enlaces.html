@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enllaços</title>
+
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+            font-size: 12pt;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Enlaces o Links</h1>
+        <p>Este es un texto de prueba como para enseñar que se puede hacer un enlace que permite enviar directamente un <a href="mailto:info@miau.com">e-mail</a> desde aquí.</p>
+        
+        <p>Aquí tenemos otro párrafo como el anterior, pero esta vez enviamos un <a href="mailto:info@miau.com;miauceo@miau.com">e-mail</a> a dos personas a la vez.</p>
+
+        <p>Aquí tenemos otro párrafo más, pero ahora enviamos un <a href="mailto:info@miau.com?cc=miauceo@miau.com">e-mail</a> con copia a una de las dos personas (CC).</p>
+
+        <p>Aquí tenemos otro párrafo una vez más, pero enviamos un <a href="mailto:info@miau.com?bcc=miauceo@miau.com">e-mail</a> con copia oculta a una de las dos personas (BCC).</p>
+
+        <p>Un párrafo nuevo pero esta vez el <a href="mailto:info@miau.com?subject=Información sobre Gatos">e-mail</a> va con asunto escrito, para los más vagos. Y este <a href="mailto:info@miau.com?body=Me gustaría pedir fotos de gatos, gracias.">e-mail</a>, con todo escrito, no vaya ser que el esfuerzo nos supere.</p>
+
+        <p>Ya vale de e-mails.</p>
+
+        <p><a href="img/cat.jpg" target="_blank">Ver imagen de gato.</a></p>
+        <p><a href="img/cat.jpg" download="gato">Descargar gato.</a></p>
+        <!-- poner algo despues del download sirve para cambiar el nombre del archivo descargado -->
+
+        <a href="#">Volver arriba</a> <!-- poner #top en el href es lo mismo -->
+    </main>
+</body>
+
+<!-- Resumen sobre links
+-------
+<a> <link> <nav> <nav>
+
+<a>Hiperenllaç que s’utilitza per enllaçar d'un lloc a un altra
+
+<a href=""></a>
+    enllaços a la part superior de la pàgina (enllaç fals)
+    #
+    #top
+    
+Atributs
+----------
+href="" - (Hiperlink REFerence) URL del enllaç - Obligatori
+    
+    
+href especials
+--------------
+    
+Obrir email
+<a href="mailto:mi@email.com">Enviar mail</a>
+    
+Obrir email amb varis destinataris
+<a href="mailto:mi@email.com;otro@email.com ">Enviar mail</a>
+    
+Obrir email amb CC
+<a href="mailto:mi@email.com?cc=otro@email.com">Enviar mail</a>
+
+Obrir email amb BCC
+<a href="mailto:mi@email.com?bcc=otro@email.com">Enviar mail</a>
+
+Obrir email amb subjet (asumpte)
+<a href="mailto:mi@email.com?subject=Asunto%20con%20espacios">Enviar mail</a>
+
+Obrir email amb Text predefinit
+<a href="mailto:mi@email.com?body=Este%20es%20el%20cuerpo%20del%20mensaje">Enviar mail</a>
+    
+    
+download - En comptes de mostrar es baixarà el document enllaçat
+
+Valor - Nom del document (amb terminació o sense ) - no es obligatori
+
+    <a href=" " download="mi imatge"> </a>
+    a href=" " download="mi-imatge.jpg"> </a>
+    
+hreflang="en" - valor per quan cambiem d'idioma - Si cal
+<a href="" hreflang="en"> </a>
+
+rel="" - relació entre el document actual i el document enllaçat. SEO 
+-> pot tindre multiples valors
+
+target - On s'ha d'obrir l'enllaç 
+<a target="_blank">
+
+Valors
+-------
+_self - Obre en mateix marc (per defecte)
+_blank - Obre en nova finestra o pestanya
+
+_parent Obre el document enllaçat al marc pare
+_top - Obre el document enllaçat al cos complet 
+framename Obre a l'iframe anomenat
+
+type
+<a type="media_type">
+
+<link> Document o recurs extern (Per exemple un full d'estil)
+
+<link rel="stylesheet" href="styles.css">
+
+
+<nav> Enllaços de navegació
+
+<nav>
+    <a href="/html/">HTML</a>
+    <a href="/css/">CSS</a>
+    <a href="/js/">JavaScript</a>
+    <a href="/python/">Python</a>
+</nav>
+
+ -->
+</html>

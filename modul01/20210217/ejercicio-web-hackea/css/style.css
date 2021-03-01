@@ -1,0 +1,98 @@
+/* Colores
+----------
+Amarillo: #FFDA1A
+Azul: #0051BA
+Gris claro: #fbfbfd
+Negro: #000009
+*/
+
+/* @import url('https://meyerweb.com/eric/tools/css/reset/reset.css'); */
+/* prohibit porque carga en paralelo */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.25rem;
+    width: 100%;
+    height: 450px;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover {
+    color:#0051BA;
+    text-decoration: none;
+}
+
+h1, h2 { font-size: 3rem;}
+
+h3 { font-size: 2rem;}
+
+h4 { font-size: 1.5rem;}
+
+h1, h2, h3, h4 {
+    margin: 25px;
+    text-align: center;
+    line-height: normal;
+    padding: 20px;
+}
+
+p {
+    margin: 25px 100px;
+    line-height: 1.5rem;
+}
+
+main section:nth-child(2) {
+    background-color: #0051BA;
+    color: white;
+}
+
+main section:nth-child(2) img {
+    width: 360px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    width: 100%;
+}
+
+footer {
+    background-color: #000009;
+    color: white;
+}
+
+form {
+    background-color: black; 
+    padding:10px 10px;
+    width: 600px;
+}
+
+label, input {
+    width: 600px;
+    padding: 35px;
+}
+
+button[type="submit"] {
+    width: 90px;
+    height: 37px;
+    color: white;
+    border: 1px solid white;
+    background-color: #000009;
+    padding: 5px;
+}

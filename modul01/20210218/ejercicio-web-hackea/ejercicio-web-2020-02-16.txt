@@ -1,0 +1,25 @@
+Colores
+----------
+Amarillo: #FFDA1A
+Azul: #0051BA
+Gris claro: #fbfbfd
+Negro: #000009
+
+Ancho máximo: 800px , área externa en gris claro.
+Tipografía: Sans-serif
+
+CSS: No se puede usar ninguna clase
+
+Estructura: Los elementos estructurales deben ser semánticos.
+
+Menú: Con enlaces anchor.
+
+Video: añade video automático y en bucle en 2 formatos y con imgen-poster.
+
+Formulario: Es obligatorio el campo Nombre y email, no te olvides de la etiqueta Name. 
+
+Mapa: No debe ser una imagen.
+
+Ten en cuanta la accesibilidad y añade todos los atributos correspondientes.
+
+Importante: Hay algunas cosas que no he explicado (en realidad sí, pero muy por encima), intenta resolverlas por tu cuenta.

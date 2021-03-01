@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator!</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <main>
+        <h1>This is a calculator!</h1>
+        <div class="container">
+            <form name="calc">
+                <input type="number" id="num1">
+                <span id="calcOperator">o</span>
+                <input type="number" id="num2">
+            </form>
+        </div>
+        <div class="container">
+            <button id="plus" onclick="setOperator('+');">+</button>
+            <button id="minus" onclick="setOperator('-');">-</button>
+            <button id="multi" onclick="setOperator('x');">x</button>
+            <button id="div" onclick="setOperator('/');">/</button>
+            <button id="result" onclick="getNumbers();">=</button>
+        </div>
+        <p id="showResult"></p>
+    </main>
+
+    <script src="js/source.js"></script>
+</body>
+</html>

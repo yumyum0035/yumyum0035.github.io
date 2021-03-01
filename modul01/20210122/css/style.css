@@ -1,0 +1,83 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+/* continuem amb lo del dia anterior! */
+
+/* Anular el CSS del navagador
+
+-- (yes) Cambiar tamaño imagenes para que se adapte
+-- (yes) Cambiar tipo de letra
+-- (yes) Cambiar tipografia H1
+-- Ajustar espacios
+-- Centrar textos
+-- Firma a la derecha
+-- Texto no mayor de 75 caracteres
+-- (yes) Titulos en Mayúsculas
+-- Corregir Interlineado
+-- Quitar negritas
+-- Tamaño de letra
+-- Quitar decoracion enlaces
+-- Cambiar color
+*/
+
+/* solo usar para test!!
+
+* {
+    outline: 1px solid orange;
+}
+
+*/
+* {
+    outline: 1px dashed orange;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 12pt;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 32pt;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 28pt;
+    font-weight: 500;
+}
+
+h1, h2 {
+    font-family: monospace;
+    max-width: 900px;
+    margin: 15px auto;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 10pt;
+}
+
+p, figcaption {
+    text-align: justify;
+    max-width: 900px;
+    margin: 15px auto;
+}
+
+p, figcaption {
+    line-height: 1.2;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: right;
+}
+
+footer img {
+    width: 300px;
+}

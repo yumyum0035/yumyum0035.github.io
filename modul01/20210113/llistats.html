@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici de llistats</title>
+
+    <style>
+        body {
+            font-family: Helvetica, sans-serif;
+        }
+
+        li {
+            font-size: 12pt;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Llistats</h1>
+        <article>
+            <h2>Grup 1 - llista ordenada</h2>
+            <ol>
+                <li>Element 1</li>
+                <li>Element 2</li>
+                <li>Element 3
+                    <h3>Subtítol h3 dins de la llista</h3>
+                    <p>paràgraf dins de d'un llistat</p>
+                    <ol reversed>
+                        <li>Element 3.1</li>
+                        <li>Element 3.2</li>
+                        <li>Element 3.3
+                            <ol>
+                                <li>Element 3.3.1</li>
+                                <li>Element 3.3.2</li>
+                                <li>Element 3.3.3</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </article>
+        
+        <article>
+            <h2>Grup 2 - llista ordenada amb número d'inici definit</h2>
+            <ol start="4">
+                <li>Element 1</li>
+                <li>Element 2</li>
+                <li>Element 3</li>
+            </ol>
+        </article>
+
+        <article>
+            <h2>Grup 3 -  llista ordenada amb número d'inici definit a ol i també a li</h2>
+            <ol start="7">
+                <li>Element 1</li>
+                <li value="100">Element 2</li> <!-- value hace que el li empiece donde quieres, en este caso 100. -->
+                <li>Element 3</li>
+            </ol>
+        </article>
+
+        <article>
+            <h2>Grup 4 - Llista desordenada</h2>
+            <ul>
+                <li>Element 1</li>
+                <li>Element 2</li>
+                <li>Element 3
+                    <ul>
+                        <li>Element 1</li>
+                        <li>Element 2</li>
+                        <li>Element 3</li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Grup 5 - llista amb termes i atributs</h2>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Llenguate de marcat de pàgines</dd>
+                <dt>CSS</dt>
+                <dd>Full d'estil en cascada</dd>
+            </dl>
+        </article>
+    </main>
+</body>
+
+<!-- Resumen de lo hecho hoy:
+
+Llistats
+
+<ul> <ol> <li> <dl> <dt> <dd>
+
+
+<ul> Llista desordenada (Unordered List) - Block
+    
+    <ul>
+      <li>element</li>
+    </ul>
+    
+    
+<ol> Llista ordenada (Ordered List) - Block
+ 
+    <ol>
+      <li>element</li>
+    </ol>
+        
+    Atributs
+    ----------
+    reversed - ordre invertit - sense valor
+    
+        <ol reversed>
+                
+    start - valor inicial del primer element - (sempre un número)
+            encara que siguin lletres es posa el número d'ordre
+        
+        <ol start="50">
+        
+    type - tipus d'atribut (a CSS hi han més valors)
+        
+        <ol type="I">
+    
+        valors
+        -------
+        1 Números decimals (1, 2, 3, 4) - (Per defecte)
+        a Llista ordenada alfabèticament en minúscules (a, b, c, d)
+        A Llista ordenada alfabèticament en majúscules (A, B, C, D)
+        i Números romans en minúscules (i, ii, iii, iv)
+        I Números romans en majúscules (I, II, III, IV)
+
+<li> Element de llista -  List-item
+      
+   <li>element</li>
+   
+    Atributs
+    ----------
+    value
+    <li value="100">
+
+<dl>Llista amb termes i descripcions
+<dt> Terme </dt>
+<dd> Descripció </dd>
+</dl>
+
+ -->
+
+</html>

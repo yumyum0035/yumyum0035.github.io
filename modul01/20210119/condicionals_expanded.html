@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionales</title>
+    <link rel="stylesheet" href="css/cond_style.css">
+</head>
+<body>
+    <main>
+        <h1>Adivina el número</h1>
+        <h2>Versión 1:</h2>
+        <form name="answerForm">
+            <label for="answer">Dime el número secreto:</label>
+            <input type="number" id="answer" name="frame" min="0" max="9">
+        </form>
+        <p><button onclick="guessMyNumber();">Comprobar</button></p>
+        <p id="result1"></p>
+        <p id="winsTotal"></p>
+
+        <h2>Versión extra:</h2>
+        <div class="container">
+            <button class="plusButton" onclick="plus();">+</button>
+            <div class="numBox" id="slot1" tabindex="1" onclick='document.getElementById("slot1").addEventListener("click", selectSlot(1));'>x</div>
+            <div class="numBox" id="slot2" tabindex="2" onclick='document.getElementById("slot2").addEventListener("click", selectSlot(2));'>x</div>
+            <div class="numBox" id="slot3" tabindex="3" onclick='document.getElementById("slot3").addEventListener("click", selectSlot(3));'>x</div>
+            <button class="minusButton" onclick="minus();">-</button>
+        </div>
+        <p>
+            <button id="check" onclick="guessMyNumber2(numero1, numero2, numero3);">Comprobar</button>
+        </p>
+        <p id="result2"></p>
+        <p id="winsTotal2"></p>
+    </main>
+    <script src="js/condicionals.js"></script>
+</body>
+</html>

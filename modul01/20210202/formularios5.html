@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formularios IV</title>
+        <!-- reset css 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+        -->
+        <link rel="stylesheet" href="css/form.css">
+        
+    </head>
+    <body>         
+        <h1>Formularios 5</h1>
+        <h2>Output</h2>
+        <form oninput="resultado.value=regulador.value">
+            <!-- se puede poner resultado.value=regulador.valueAsNumber pero algunos navegadores no lo pillan aun -->
+            <label> Regulador
+                <input type="range" id="regulador" min="10" max="200">
+                <output id="resultado" for="regulador"></output>
+                <!-- oninput se puede poner tambien en el output -->
+            </label>
+        </form>
+
+        <h2>Datalist</h2>
+        <p>Lista de opciones predefinidas.</p>
+        <form>
+            <label> Lenguajes
+                <input type="text" list="lenguajes" id="lenguaje" placeholder="Elije tu lenguaje">
+                <datalist id="lenguajes">
+                    <!-- es un listado que funciona con <option> -->
+                    <option value="HTML"></option>
+                    <option value="CSS"></option>
+                    <option value="Python"></option>
+                    <option value="javascript"></option>
+                </datalist>
+            </label>
+
+            <label for="color-favorito">Color favorito
+                <input type="color" list="colores-favoritos" name="color-favorito" id="color-favorito">
+                <datalist id="colores-favoritos">
+                    <option value="#ffcccc"></option>
+                    <option value="#ccffff"></option>
+                    <option value="#ffccff"></option>
+                    <option value="#ccffcc"></option>
+                    <option value="#ccccff"></option>
+                    <option value="#ffffcc"></option>
+                </datalist>
+            </label>
+
+            <label>Regulador
+                <input type="range" list="rangos" name="regulador" id="regulador" min="0" max="200">
+                <datalist id="rangos">
+                    <option value="0"></option>
+                    <option value="50"></option>
+                    <option value="100"></option>
+                    <option value="150"></option>
+                    <option value="200"></option>
+                </datalist>
+            </label>
+
+            <label>Calendario
+                <input type="date" id="Calendar" name="Calendar" list="Fechas">
+                <datalist id="Fechas">
+                    <option value="2021-02-02">Dia de la Marmota</option>
+                    <option value="2021-02-02">2 de Febrero de 2021</option>
+                </datalist>
+            </label>
+        </form>
+
+        <h2>Progress</h2>
+        <form oninput="progreso.value=cargador.value">
+            <label>Progress bar
+                <input type="number" value="0" min="0" max="100" step="10" name="cargador" id="cargador">
+                <progress id="progreso" value="0" max="5"></progress>
+            </label>
+        </form>
+        
+        <h2>Meter</h2>
+        <form>
+            <label>Acelerador
+            <input type="number" id="acelerador" value="0" step="1" min="0" max="100" oninput="velocidad.value=acelerador.valueAsNumber">
+            </label>
+
+            <label>Velocidad
+            <meter 
+                id="velocidad" 
+                value="0" 
+                for="acelerador"      
+                min="0" 
+                max="100" 
+                low="40" 
+                optimum="50" 
+                high="60">
+                </meter>
+            </label>
+
+            <!-- Mira es tos valores <meter> 
+
+                min="0" max="100"
+                min="0" max="100" low="50"
+                min="0" max="100" high="50"
+                min="0" max="100" low="40" high="60"
+                min="0" max="100" low="30" high="40"
+                min="0" max="100" low="60" high="70"
+                min="0" max="100" low="40" optimum="50" high="60"
+                min="0" max="100" low="40" optimum="30" high="60"
+                min="0" max="100" low="40" optimum="70" high="60"
+
+                Más información: https://css-tricks.com/html5-meter-element/
+
+            -->
+            <button type="submit" tabindex="4">Enviar</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+html {
+    font-size: 16px; 
+    /*la mida sempre es declara en pixels i al html perque pugui agafar la mida als rems, AIXO ES STANDARD, a partir d'ara es fa SEMPRE. d'aquesta manera el html es la mida de la qual les altres depenen, i per tant nomes s'ha de tocar aqui.*/
+}
+
+/*****
+El modelo de caja son las dimensiones del Contenido de una caja (todos los elementos HTML son cajas)
+
+Las cajas in-line no tienen anchura ni altura (está definida por su contenido) 
+tampoco tienen ni márgenes ni padings verticales.
+
+Estructura de una caja de afuera hacia adentro:
+ - Margin (margen externo)
+ - Border (Línea, filete) 
+ - Pading (relleno, acolchado, margen interno, etc…)
+ - Contenido (no confundir con la propiedad content de CSS)
+
+
+Propiedad CSS box-sizing:
+
+    content-box - Incluye sólo el contenido - Por defecto
+    border-box - Incluye el contenido, el relleno y el borde
+    initial - vuelve al valor por defecto
+    inherit - hereda del elemento contenedor
+    unset - hereda del elemento inmediatamente superior 
+*****/
+
+/* test
+* { 
+     outline: 1px solid orange; 
+}
+****/
+
+/*no usar alturas en cajas de texto.*/
+
+p {
+    width: 200px;
+    padding: 20px;
+    border: 2px solid red;
+}
+
+span { 
+    padding:10px; 
+    margin:10px;
+    background: rgba(255, 192, 200, .1); 
+}
+
+.anchomasborde { 
+    box-sizing: border-box;
+}
+
+.marc {
+    width:500px; 
+    border:10px solid green;
+    padding:10px;
+    box-sizing: border-box;
+}

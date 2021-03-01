@@ -1,0 +1,56 @@
+@import url("reset.css");
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+h1, h2 {
+    font-size: 34pt;
+    padding: 3% 2%;
+}
+
+p {
+    padding: 2%;
+}
+
+/* solución con float!
+html {
+    box-sizing: border-box; /* reset del modelo de cajas *
+}
+
+figure {
+    float: left;
+    background-color: #f1f1f1;
+    margin: 1%;
+    padding: 1%;
+}
+*/
+
+figure { /* solución con display */
+    display: inline-block; /* permite poner cosas una al lado de la otra */
+    vertical-align: top;
+    background-color: #f1f1f1;
+    margin: 1%;
+    padding: 1%;
+}
+
+figcaption {
+    font-size: 11pt;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0 auto;
+    padding: 3% 1%;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/*
+picture {
+    display: inline-block;
+    margin: 1%;
+}
+*/

@@ -1,0 +1,64 @@
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"); */
+
+/*** test ***/
+* {outline: 1px solid orange; padding: 10px;}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+}
+
+/** Pseudoclases de orden  
+
+:nth-of-type(n) - Selecciona uno o más elementos en función de su posición entre un grupo de hermanos del mismo tipo.
+:nth-last-of-type(n) - Lo mismo pero comenzando por el final
+
+**/
+
+/* Valores
+:nth-of-type(22) - Número de orden
+:nth-of-type(odd) - Elementos impares
+:nth-of-type(even) - Elementos pares
+:nth-of-type(2n) - Cada 2 elementos
+:nth-of-type(3n+4) - Cada 3 elementos + comenzando en el 4
+:nth-of-type(-n+3) - Solo los 3 primeros elementos 
+:nth-of-type(n+3) - Todos a partir del 3
+*/
+
+body p:nth-child(2n) {background: pink;}
+
+/** Otras Pseudoclases
+:empty	 - selecciona  elementos que no tienen hijos
+:lang() - selecciona elementos con un atributo lang con el valor especificado
+:not - selecciona todo lo que no es… - acepta selectores simples: selector universal, selector HTML, Clase, ID, selector de atributo y pseudoclases (no acepta pseudoelementos) - solo acepta un único selector
+
+https://css-tricks.com/almanac/selectors/n/not/
+
+:root selector de la raiz del DOM HTML que suele ser el mismo HTML o a veces el Viewport
+
+
+**/
+
+/* :empty     
+p:empty {  
+    width: 100px;
+    height: 20px;
+    background: red;
+    }
+*/
+    
+    
+/* :lang() */
+:lang(la) { background: pink;}
+p:lang(es) { background: cyan;}
+
+/* :not 
+body :not(p) { background: cyan; }  
+*/ 
+
+/* :root  
+:root { background: #ddd; }
+*/    

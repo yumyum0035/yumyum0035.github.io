@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <!-- 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    -->
+
+    <title>Selectores de atributos</title>
+
+<!-- reset css
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+ -->
+
+<style>
+
+
+
+/****  
+El selector [ atributo ] selecciona elementos con el atributo especificado.
+
+p[class] { background-color: orange; }
+*
+
+***/
+
+/****  
+El selector [ atributo = valor ] selecciona elementos con el atributo y valor especificados.
+
+a[target=_blank] { background-color: pink; }
+
+a[target=_blank]::before {
+    content:url("recursos/butaca-n.png"); /*añade una imagen delante de los enlaces con target=_blank, (como por ejemplo, poner el cuadradito con flecha que indica enlace externo)*
+}
+****/
+
+/****  
+El selector [ atributo ~= valor ] selecciona los elementos con las mismas palabras exactas.
+
+[title~=enlace] { border: 5px solid red; }
+
+
+
+/****  
+El selector [atributo|=valor] selecciona elementos con el atributo especificado y con el valor especificado.
+
+[title|=enlace] { border: 5px solid green; }
+****/
+
+
+/**** 
+
+El selector [atributo$=valor] selecciona los elementos cuyo valor de atributo termina con un valor especificado.
+
+[title$=enlace] { border: 5px solid blue; }
+
+****/
+
+/**** 
+
+El selector [atributo*=valor] selecciona los elementos que contengan las palabras.
+
+[class*=clase] { border: 5px solid purple; }
+
+
+https://developer.mozilla.org/es/docs/Web/CSS/Selectores_atributo
+
+
+
+/*** truco ***
+esto hace que las imagenes que tengan alt tengan un outline rosa, mientras que las que no tengan el alt tendran el outline verde. recordar que el atributo alt tiene que estar siempre, pero no necesariamente tiene que estar lleno.
+img[alt=""] {outline: 5px solid pink;}
+
+img:not([alt]) {outline: 5px solid lightseagreen;}
+
+****/
+
+a[target=_blank]::before {
+    content:url("recursos/butaca-n.png"); /*añade una imagen delante de los enlaces con target=_blank, (como por ejemplo, poner el cuadradito con flecha que indica enlace externo)*/
+}
+
+[title=hola] { outline: 5px solid red; }
+[title|=hola] { background: lightsalmon; }
+
+img[alt=""] {outline: 5px solid pink;}
+
+img:not([alt]) {outline: 5px solid lightseagreen;}
+
+</style>
+
+</head>
+    
+<body>
+
+
+
+
+
+
+    <div>
+        <p><a href="" title="cacao">solo</a></p>
+        <p><a href="" title="cacao es esto">principio</a></p>
+        <p><a href="" title="esto es un cacao y mas">en medio</a></p>
+        <p><a href="" title="esto es un cacao">final</a></p>
+        <p><a href="" title="esto son muchos cacaos">parte de una palabra</a></p>
+        <p><a href="" title="cacao-">con guion final</a></p>
+    </div>
+
+    <img src="recursos/alien.jpg" alt="">
+    <img src="recursos/vader.jpg">
+
+
+
+    
+</body>
+</html>

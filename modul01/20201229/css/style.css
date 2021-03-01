@@ -1,0 +1,133 @@
+@import url("css/reset.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap'); 
+/* font-weight: 400 for regular, 500 for medium */
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+header {
+    position: relative ;
+    background-color: #c1c1c1;
+}
+
+header img {
+    margin: 29px 0 0 39px;
+    position: absolute;
+    left: 39px;
+    top: 29px;
+}
+nav {
+    position: absolute;
+    top: 128px;
+    right: 30px;
+    text-align: right;
+    font-size: 20px;
+    font-weight: 500;
+}
+nav ul li {
+    list-style-type: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 23px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+nav ul li a.select {
+    border-bottom: solid 4px #000;
+    padding-bottom: 10px;
+}
+
+main {
+    position: relative;
+    top: 203px;
+}
+
+video {
+    max-width: 100%;
+    padding: 44px 0;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 400;
+    text-align: center;
+    padding: 29px 0;
+}
+
+section {
+    margin: 35px;
+    padding: 25px;
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+    height: 193px;
+    padding: 54px 1% 0 1%;
+    margin: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image {
+    position: relative;
+    padding: 23px 15px;
+}
+
+.rectangle {
+    font-size: 18px;
+    line-height: 41px;
+    text-align: left;
+    background-color: white;
+    padding: 5px 15px;
+    width: 205px;
+    height: 41px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: -5px;
+    top: 290px;
+    z-index: 10;
+}
+
+.plus-icon {
+    position: absolute;
+    z-index: 10;
+    top: 275px;
+    left: 315px;
+}
+
+footer {
+    position: relative;
+    top: 200px;
+}
+
+.footer li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 5%;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+i {
+    font-size: 45px;
+    padding: 0 15px;
+}

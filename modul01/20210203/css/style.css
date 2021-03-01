@@ -1,0 +1,88 @@
+@import url('https://meyerweb.com/eric/tools/css/reset/reset.css');
+
+/* test
+* {
+    outline: 1px orange solid;
+}
+*/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
+    font-family: Helvetica, sans-serif;
+    line-height: 2.5rem;
+}
+
+h1, h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: normal;
+    color: lightseagreen;
+}
+
+header {
+    background-color: lightseagreen;
+    color: white;
+    margin: 0px;
+    padding: 5% 25%;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+}
+
+main {
+    width: 450px;
+    margin: 50px auto;
+}
+
+input, label {
+    padding: 10px 15px;
+    width: 90%;
+}
+
+label {
+    font-size: .9rem;
+}
+
+legend {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    padding: 5px 15px;
+}
+
+fieldset {
+    background-color: #e7e7e7;
+    padding: 10px 20px 50px;
+    border-radius: 10px;
+}
+
+.etiqueta-corta {
+    width: 33%;
+    margin: 5px;
+}
+
+button, input[type="submit"], input[type="reset"] {
+    background-color: lightseagreen;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 30px;
+    width: auto;
+    margin: 5px auto;
+}
+
+textarea {
+    min-width: 380px;
+    max-width: 380px;
+}
+
+.note {
+    font-size: .8rem;
+    text-align: right;
+}

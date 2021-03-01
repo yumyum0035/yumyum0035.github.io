@@ -1,0 +1,84 @@
+@import url("reset.css");
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+main {
+    display: grid; /* mirarse esto bien */
+    width: 50%;
+    margin: 25px 25%;
+}
+
+h1 {
+    font-size: 32pt;
+    padding:2.5% 5%;
+}
+
+h2 {
+    font-size: 24pt;
+    padding: 2.5% 5%;
+}
+
+p {
+    padding: 2%;
+}
+
+.container {
+    display: inline-flex;
+    align-items: center;
+}
+
+.plusButton {
+    background-color: rgb(255, 154, 136);
+}
+
+.minusButton {
+    background-color: rgb(96, 191, 223);
+}
+
+.plusButton, .minusButton {
+    padding: 5px;
+    margin: 10px;
+    border: solid black 3px;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+
+    font-size: 14pt;
+    font-weight: 800;
+    line-height: 12pt;
+    color: black;
+}
+
+button {
+    padding: 7px;
+    margin: 5px;
+    border: none;
+    border-radius: 25px;
+    background-color: lightblue;
+}
+
+.numBox {
+    width: 50px;
+    height: 50px;
+    border: solid #929292 2px;
+    border-radius: 5px;
+    background-color: #ececec;
+    margin: 0 5px;
+    line-height: 50px;
+
+    text-align: center;
+    font-size: 16pt;
+    color: #929292;
+}
+
+.numBox:focus {
+    background-color: #b3a5a5;
+    color: white;
+}
+
+.contained img {
+    max-width: 200px;
+    height: 150px;
+}

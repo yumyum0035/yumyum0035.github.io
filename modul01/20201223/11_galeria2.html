@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria, pero 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- Imágenes adaptative con HTML5
+
+Etiqueta <picture>
+La etiqueta <picture> permite servir diferentes imágenes según el tamaño de visor en el que se encuentra el usuario. Esta etiqueta es relativamente nueva y requiere un poco de tiempo para que esté ampliamente soportada.
+
+Ej. simple:
+    <picture>
+        <source srcset=”img320px.jpg” media=”(max-width: 320px)”>
+        <source srcset=”img768px.jpg” media=”(max-width: 768px)”>
+        <source srcset=”img.jpg”>
+        <img src=”img.jpg” alt=”Descripción de la imagen”>
+    </picture>
+
+    EJERCICIO
+    Optimizar las imágenes de la carpeta para:
+    - 320px
+    - 768px
+-->
+
+<body>
+    <main>
+        <h1>Imágenes adaptativas con HTML5</h1>
+        <picture>
+            <source srcset="img/320px-cable-car-to-heaven.jpg" media="(max-width: 320px)">
+            <source srcset="img/768px-cable-car-to-heaven.jpg" media="(max-width: 768px)">
+            <source srcset="img/cable-car-to-heaven.jpg">
+            <img src="img/cable-car-to-heaven.jpg" alt="Cable to Heaven">
+        </picture>
+        <picture>
+            <source srcset="img/320px-el-seductor.jpg" media="(max-width: 320px)">
+            <source srcset="img/768px-el-seductor.jpg" media="(max-width: 768px)">
+            <source srcset="img/el-seductor.jpg">
+            <img src="img/el-seductor.jpg" alt="El seductor">
+        </picture>
+        <picture>
+            <source srcset="img/320px-locked-behind-bars.jpg" media="(max-width: 320px)">
+            <source srcset="img/768px-locked-behind-bars.jpg" media="(max-width: 768px)">
+            <source srcset="img/locked-behind-bars.jpg">
+            <img src="img/locked-behind-bars.jpg" alt="Locked behind bars">
+        </picture>
+        <picture>
+            <source srcset="img/320px-opresiva-presencia.jpg" media="(max-width: 320px)">
+            <source srcset="img/768px-opresiva-presencia.jpg" media="(max-width: 768px)">
+            <source srcset="img/opresiva-presencia.jpg">
+            <img src="img/opresiva-presencia.jpg" alt="Opresiva presencia">
+        </picture>
+        <picture>
+            <source srcset="img/320px-perro-italica-bold.jpg" media="(max-width: 320px)">
+            <source srcset="img/768px-perro-italica-bold.jpg" media="(max-width: 768px)">
+            <source srcset="img/perro-italica-bold.jpg">
+            <img src="img/perro-italica-bold.jpg" alt="Perro Italica Bold">
+        </picture>
+        <picture>
+            <source srcset="img/320px-rejilla-perspectiva.jpg" media="(max-width: 320px)">
+            <source srcset="img/768px-rejilla-perspectiva.jpg" media="(max-width: 768px)">
+            <source srcset="img/rejilla-perspectiva.jpg">
+            <img src="img/rejilla-perspectiva.jpg" alt="Rejilla perspectiva">
+        </picture>
+        <picture>
+            <source srcset="img/320px-speech-ballon.jpg" media="(max-width: 320px)">
+            <source srcset="img/768px-speech-ballon.jpg" media="(max-width: 768px)">
+            <source srcset="img/speech-ballon.jpg">
+            <img src="img/speech-ballon.jpg" alt="Speech Ballon">
+        </picture>
+    </main>
+</body>
+</html>
+
+
