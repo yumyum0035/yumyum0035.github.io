@@ -1,0 +1,49 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+main {
+    margin: 5%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 50pt;
+}
+
+h2 {
+    font-size: 35pt;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 10pt;
+}
+
+ul {
+    list-style-type: none;
+}
+/**** changes the default dot of the li for a diamond! "2605" for a star! :)  ****/
+li:before {
+    content: "\2666"; /* diamond */
+    margin: 0 1%;
+    color: #9ec5bf;
+}
+
+a {
+    color: #9ec5bf;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(146, 126, 194);
+}
+
+.yoshiP {
+    margin: 50px 33%;
+    width: 500px;
+}
