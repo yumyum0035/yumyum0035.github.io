@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, Maximum-scale=3">
+
+
+    <title>Document</title>
+
+    <meta name="description" content=" ">
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+
+    <style>
+        /*****
+            Elementos reutilizables (colores, tipografías…)
+            Comentarios generales...
+
+        *****/
+        /***** TEST
+            * { outline: 1px solid orange; }
+
+            img[alt=""] { outline: 6px dashed orange; }
+            img:not([alt]) { outline: 6px dashed red; }
+        *****/
+        /***** ESTRUCTURA *****/
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        main {
+            padding: 2rem;
+            height: 100vh;
+        }
+        /***** TIPOGRAFIA *****/
+        
+        html {
+            font-size: 10px;
+        }
+        
+        h1 {
+            font-size: 4rem;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        /***** ESTETICA *****/
+        
+        main {
+            background: pink;
+        }
+        
+        .escritorio-grande {
+            background: #a4b6dd;
+        }
+        
+        .escritorio-normal {
+            background: #a9e2e4;
+        }
+        
+        .tablet {
+            background: #b9cdf8
+        }
+        
+        .movil-normal {
+            background: #b3f1f3;
+        }
+        
+        .movil-petit {
+            background: #94a7cf
+        }
+        /***** MEDIA QUERIES: mobile first *****/
+        
+        .escritorio-grande,
+        .escritorio-normal,
+        .tablet,
+        .movil-normal {
+            display: none;
+        }
+        
+        @media (min-width: 575.98px) {
+            .movil-petit {
+                display: none;
+            }
+            .movil-normal {
+                display: block;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .movil-normal {
+                display: none;
+            }
+            .tablet {
+                display: block;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .tablet {
+                display: none;
+            }
+            .escritorio-normal {
+                display: block;
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            /* max width es hasta esa medida, si es mas grande la regla no se cumple*/
+            .escritorio-normal {
+                display: none;
+            }
+            .escritorio-grande {
+                display: block;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <main class="escritorio-grande">
+        <h1>Escritorio Grande</h1>
+    </main>
+    <main class="escritorio-normal">
+        <h1>Escritorio Normal</h1>
+    </main>
+    <main class="tablet">
+        <h1>Tablet</h1>
+    </main>
+    <main class="movil-normal">
+        <h1>Móvil normal</h1>
+    </main>
+    <main class="movil-petit">
+        <h1>Móvil pequeño</h1>
+    </main>
+
+</body>
+
+</html>

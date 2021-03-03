@@ -1,0 +1,70 @@
+/*****  TEST  
+    * { outline: 1px solid orange; } 
+        
+    img[alt=""] { outline: 6px dashed orange; }
+    img:not([alt]) { outline: 6px dashed red; } 
+
+*****/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1rem;
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+main {
+    padding: 2rem;
+    height: 100vh;
+    background: pink;
+}
+
+.escritorio-grande {
+    background: #a4b6dd;
+}
+
+.escritorio-normal {
+    background: #a9e2e4;
+}
+
+.tablet {
+    background: #b9cdf8
+}
+
+.movil-normal {
+    background: #b3f1f3;
+}
+
+.movil-petit {
+    background: #94a7cf
+}
+
+
+/*****  media queries 
+--------------------------------------
+    Desktop first - top to bottom
+--------------------------------------
+*****/
+
+@media (max-width: 1200px) {
+    main {
+        background: lightseagreen;
+        color: white;
+    }
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 575.98px) {}

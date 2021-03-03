@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, Maximum-scale=3">
+
+
+    <title>Media Queries Base</title>
+
+    <meta name="description" content=" ">
+
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    <style>
+        /*****  TEST  
+                * { outline: 1px solid orange; } 
+                    
+                img[alt=""] { outline: 6px dashed orange; }
+                img:not([alt]) { outline: 6px dashed red; } 
+
+            *****/
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-size: 10px;
+        }
+        
+        body {
+            font-size: 1rem;
+            font-family: Helvetica, sans-serif;
+        }
+        
+        h1 {
+            font-size: 4rem;
+        }
+        
+        main {
+            padding: 2rem;
+            height: 100vh;
+            background: pink;
+        }
+        /*****  media queries *****/
+        
+        @media screen and (min-width: 800px) {
+            /*indica el ancho minimo de la pantalla*/
+            main {
+                background-color: lightseagreen;
+                color: white;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <h1>Ejercicio Media Queries</h1>
+    </main>
+</body>
+
+</html>

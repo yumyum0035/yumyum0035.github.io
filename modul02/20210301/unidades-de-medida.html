@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+
+<head>
+
+<meta charset="UTF-8">
+<title>Unidades de Medida</title>
+
+<!-- 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+-->
+
+<!-- reset css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+    
+<style>
+
+    * { box-sizing: border-box; }
+    
+    html { font-size: 10px; font-family: sans-serif;}
+    
+    body, h1, h2, p, div, ul { margin: 20px; }
+    
+    div p { margin: 0 0 20px 0; }
+    
+    h1 { font-size: 3.2rem; line-height: 4rem;}
+    h2 { font-size: 2.6rem; line-height: 3rem;}
+    p  { font-size: 2rem; line-height: 2.4rem;}
+    
+    div { 
+        padding: 20px ;
+        width:  600px;
+        margin-bottom: 10px;
+        outline: 1px solid blue;
+    }
+    
+    .cm { width: 10cm; }
+    .mm { width: 100mm; }
+    .in { width: 10in; }   
+    .pt { width: 720pt; }  
+    .pc { width: 60pc; }
+    .px { width: 960px; }    
+
+    .em li { font-size: 2em; }
+    .rem li  { font-size: 2rem; }
+    .ex li  { font-size: 4ex; }
+    .ch li  { font-size: 4ch; }
+    
+    .vw  { width: 50vw; } 
+    .vh  { width: 50vh; } 
+    .vmin  { width: 50vmin; } 
+    .vmax  { width: 50vmax; } 
+    .percent   { width: 50%; } 
+
+    .fr { 
+        padding: 0;
+        width: 90vw;
+        display: grid;
+        grid-template-columns: 400px 10fr 2fr;
+
+    }
+    .fr p { 
+        margin: 0;
+        outline: 1px solid orange;
+        vertical-align: text-bottom;
+        }
+</style>
+
+</head>
+
+<body>
+
+<h1>Unidades de medida</h1>
+
+<h2>Unidades absolutas (o eso dicen)</h2>
+<p>Sólo son absolutas cuando están impresas, por lo que en realidad son relativas según el dispositivo.</p>
+<main>
+    <div class="cm">
+        <p>
+        cm - centímetros<br><br>
+        10cm
+        </p> 
+    </div> 
+
+    <div class="mm">
+        <p>
+        mm - milímetros<br><br>
+        100mm
+        </p> 
+    </div> 
+    <div class="in">
+        <p>
+        in - pulgada<br>
+        equivale a 2,54cm<br><br>
+        10in
+        </p> 
+    </div> 
+    <div class="pt">
+        <p>
+        pt - punto tipográfico<br>
+        72pt = 1in <br><br>
+        720pt
+        </p> 
+    </div> 
+    <div class="pc">
+        <p>
+        pc - pica o cícero<br>
+        1pc = 12pt<br>
+        6pc = 1in<br><br>
+        60pc
+        </p> 
+    </div> 
+<h2>El píxel, unidad a veces absoluta, a veces relativa, a veces ni lo uno ni lo otro</h2>
+    <div class="px">
+        <p>Existen 2 tipos de píxel:</p>
+        <p>Píxel de dispositivo<br>
+        Unidad mínima de color de una pantalla digital. Es una abreviación de Pix (imagen) + el (elemento).<br>
+        Su tamaño puede variar de un dispositivo a otro.
+        </p>
+        <p>
+        Píxel CSS: px<br>
+        Unidad de longitud que corresponde al ancho o alto (existen pixels rectangulares) de un único punto mínimo visible sin esfuerzo por el ojo humano.
+        </p>
+        <p>
+        Definición (no es un chiste aunque lo parezca):<br>Tamaño físico de un solo píxel con una densidad de píxeles de 96DPI, ubicado a un brazo de distancia de los ojos de un espectador.<br>
+        96px = 1in = 96DPI (PPI, PPD, etc.)
+        </p> 
+        <p>
+        Y para acabar de liarlo todo, la resolución que se usa en las imagenes para pantalla no es 96DPI, es 72DPI.<br><br>
+        960px
+        </p> 
+    </div> 
+    <h2>MM xx 00 - Unidades relativas (como si todas las anteriores no lo fueran)</h2>
+    <h2 style="font-family: serif;">MM xx 00 Unidades relativas (como si todas las anteriores no lo fueran)</h2>
+    <h2 style="font-family: fantasy;">MM xx 00 Unidades relativas (como si todas las anteriores no lo fueran)</h2>
+    
+    <div class="em">
+        <p>
+        em (Abreviatura de espacio eme)<br>
+        Es una unidad de medida tipográfica relativa al tamaño (font-size) del elemento contenedor, no al tamaño del propio elemento, por lo que es complejo de gestionar.
+        </p> 
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>
+                <ul>
+                    <li>Subelemento 1</li>
+                    <li>Subelemento 2</li>
+                    <li>Subelemento 3</li>   
+                </ul>
+            </li>
+        </ul>
+    </div> 
+    <div class="rem">
+        <p>
+        rem (root em)<br>
+        Tamaño de fuente del elemento raíz del documento (HTML) a diferencia de "em" es constante en todo el documento.
+        </p> 
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>
+                <ul>
+                    <li>Subelemento 1</li>
+                    <li>Subelemento 2</li>
+                    <li>Subelemento 3</li>   
+                </ul>
+            </li>
+        </ul>
+    </div> 
+      <div class="ex">
+        <p>
+        ex<br>Unidad de medida tipográfica que equivale a la altura de la letra x o tamaño del corpus, al igual que em es relativa al tamaño (font-size) del elemento contenedor 
+        </p>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>
+                <ul>
+                    <li>Subelemento 1</li>
+                    <li>Subelemento 2</li>
+                    <li>Subelemento 3</li>   
+                </ul>
+            </li>
+        </ul>
+    </div>   
+    <div class="ch">
+        <p>
+        ch<br>Unidad de medida tipográfica que equivale a la anchura del 0 (cero), al igual que em es relativa al tamaño (font-size) del elemento contenedor.
+        </p>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>
+                <ul>
+                    <li>Subelemento 1</li>
+                    <li>Subelemento 2</li>
+                    <li>Subelemento 3</li>   
+                </ul>
+            </li>
+        </ul>
+    </div> 
+    <div class="vw">
+        <p>
+        vw<br>Unidad de medida que equivale al 1% de la  anchura de la ventana gráfica (viewport).
+        </p>
+        <p> 50vw</p>
+    </div>
+    <div class="vh">
+        <p>
+        vh<br>Unidad de medida que equivale al 1% de la  altura de la ventana gráfica (viewport).
+        </p>
+        <p> 50vh</p>
+    </div>
+    <div class="vmin">
+        <p>
+        vmin<br>Unidad de medida que equivale al 1% de la  parte más estrecha de la ventana gráfica (viewport).
+        </p>
+        <p> 50vmin</p>
+    </div> 
+    <div class="vmax">
+        <p>
+        vmax<br>Unidad de medida que equivale al 1% de la parte más ancha de la ventana gráfica (viewport).
+        </p>
+        <p> 50vmax</p>
+    </div>
+       <div class="percent">
+        <p>
+        %<br>Unidad de medida que equivale al 1% del elemento contenedor.
+        </p>
+        <p> 50%</p>
+    </div>
+
+    <div class="fr">
+            <p>
+            fr (fracción)<br>Unidad de medida que equivale a la fracción del espacio sobrante.<br><br>
+            400px
+            </p>
+            <p>1fr</p>
+            <p>1fr</p>
+
+    </div>
+</main>   
+</body>
+</html>
