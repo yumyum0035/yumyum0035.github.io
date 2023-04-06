@@ -5,7 +5,7 @@ const Art3D = () => {
   return (
     <div>
       <h2>3D art</h2>
-      <p>placeholder for no as I figure wtf is wrong with git 👍</p>
+      <p>placeholder for now as I figure wtf is wrong with git 👍</p>
     </div>
   );
 };
