@@ -9,6 +9,11 @@ interface Item {
   url: string;
 }
 
+/* TODO: media queries
+ * website appearance
+ * ipad appearance
+ */
+
 const Home = () => {
   const elements: Item[] = [
     {
