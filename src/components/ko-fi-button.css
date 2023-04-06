@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap");
+
+.ko-fi {
+  display: grid !important;
+  grid-template-columns: auto auto;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  border-radius: 4px;
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: white;
+  background-color: var(--main-color);
+
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.ko-fi:hover {
+  cursor: pointer;
+  background-color: var(--accent-color);
+}
+
+.ko-fi:hover img {
+  animation: 1s infinite alternate wiggle;
+}
+
+.ko-fi img {
+  width: 22px;
+  height: 15px;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

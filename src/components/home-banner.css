@@ -1,0 +1,54 @@
+.banner {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 24rem;
+  margin-bottom: 1em;
+  grid-template-areas: "banner";
+}
+
+.img-box {
+  grid-area: banner;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+  background: black;
+}
+
+.img-box img {
+  width: 1920px;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.link {
+  object-position: -85rem -10rem;
+}
+.natsume {
+  object-position: -50rem -34rem;
+}
+.penny {
+  width: 1280px !important;
+  object-position: -40rem -40rem;
+}
+
+.banner-title {
+  grid-area: banner;
+  align-self: center;
+  justify-self: center;
+  margin: 1rem 1rem;
+  color: white;
+
+  font-size: 1.2em;
+  font-weight: 100;
+
+  z-index: 1;
+}
+
+.banner:hover .img-box img {
+  opacity: 1;
+}
+
+.banner:hover .banner-title {
+  text-transform: uppercase;
+}

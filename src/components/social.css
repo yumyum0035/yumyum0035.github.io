@@ -1,0 +1,47 @@
+.social {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+  background-color: var(--main-color);
+  border-radius: 1em;
+  padding: 1em 1.5em;
+
+  color: white;
+  text-align: center;
+}
+
+.social:hover {
+  background-color: var(--accent-color);
+}
+
+.social a,
+.social a:visited,
+.social a:active {
+  color: white;
+}
+
+.social p {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.4;
+}
+
+.social img {
+  width: 25px;
+  filter: invert();
+}
+
+.link-note {
+  font-size: 1.2rem;
+  text-align: end;
+}
+
+.link-note span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.25em;
+  border-radius: 5px;
+}

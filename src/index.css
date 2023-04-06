@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Roboto:wght@100;300;400;700&family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+
+:root {
+  --font-title: "Libre Barcode 39 Text", monospace;
+  /*--font-body: "Roboto", sans-serif;*/
+  /* --font-body: "Quattrocento Sans", sans-serif; */
+  --font-body: "Source Sans Pro", sans-serif;
+  /* --font-subtitle: "Vidaloka", serif; */
+  --font-subtitle: "Playfair Display", serif;
+  --main-color: #88c9c0;
+  --accent-color: #88dedede;
+  --bg-color: white;
+  --text-color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px; /* 1em = 8px */
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+h1 {
+  margin: 0;
+  font-size: 3.5rem;
+  font-family: var(--font-title);
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+h2,
+h3,
+h4 {
+  font-family: var(--font-subtitle);
+  font-weight: 700;
+}
+
+ul li {
+  list-style-type: "◆ ";
+}
+
+button {
+  background-color: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+#App {
+  display: grid;
+  gap: 1em;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  grid-template-columns: 95vw;
+  grid-template-rows: min-content auto min-content;
+  height: 100vh;
+  justify-content: center;
+}
+
+header {
+  grid-area: header;
+}
+#main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+/* media queries: mobile first */
+@media (min-width: 480px) {
+  /* mobile */
+}
+
+@media (min-width: 768px) {
+  /* tablet: 768 or higher */
+}
+
+@media (min-width: 1024px) {
+  /* desktop: 1024px or higher */
+}

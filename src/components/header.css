@@ -1,0 +1,22 @@
+header {
+  display: grid !important;
+  gap: 1em;
+  grid-template-areas: "title" "sub-title" "nav";
+  justify-content: space-around;
+  align-content: center;
+  padding: 2rem 0 0 0 !important;
+}
+
+h1,
+header p {
+  text-align: center;
+}
+
+h1 {
+  grid-area: title;
+}
+
+header p {
+  grid-area: sub-title;
+  margin: 0;
+}
