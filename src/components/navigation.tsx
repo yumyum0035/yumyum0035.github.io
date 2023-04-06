@@ -7,7 +7,6 @@ interface PageInfo {
   title: string;
 }
 
-//TODO: styles
 //TODO: hamburger menu! I want it like that yesyes
 
 const Navigation = () => {

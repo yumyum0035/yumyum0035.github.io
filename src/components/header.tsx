@@ -1,7 +1,6 @@
 import "./header.css";
 import Navigation from "./navigation";
 
-//TODO: styles
 const Header = () => {
   return (
     <header>
