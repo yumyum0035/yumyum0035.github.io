@@ -8,7 +8,7 @@ interface Icon {
 
 const IconLink = (props: Icon) => {
   return (
-    <a className="icon-link" href={props.link}>
+    <a className="icon-link" href={props.link} target="_blank">
       <img src={props.src} alt={props.title} />
     </a>
   );
