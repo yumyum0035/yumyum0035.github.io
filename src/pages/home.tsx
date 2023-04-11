@@ -10,6 +10,7 @@ interface Item {
 }
 
 /* TODO: media queries
+ * 2D/3D gallery
  * website appearance
  * ipad appearance
  */
