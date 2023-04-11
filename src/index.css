@@ -110,6 +110,7 @@ header {
   grid-area: header;
 }
 #main {
+  align-self: center;
   grid-area: main;
   height: 723px;
   overflow-y: auto;

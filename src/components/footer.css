@@ -3,7 +3,7 @@ footer {
   gap: 1em;
   grid-auto-flow: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0 0 0.5em;
 }
 
