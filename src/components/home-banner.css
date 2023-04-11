@@ -1,7 +1,7 @@
 .banner {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 24rem;
+  grid-template-rows: 21.6rem;
   margin-bottom: 1em;
   grid-template-areas: "banner";
 }

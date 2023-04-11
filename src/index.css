@@ -95,7 +95,7 @@ button {
 
 #App {
   display: grid;
-  gap: 1em;
+  gap: 0.5em;
   grid-template-areas:
     "header"
     "main"
@@ -111,6 +111,8 @@ header {
 }
 #main {
   grid-area: main;
+  height: 723px;
+  overflow-y: auto;
 }
 footer {
   grid-area: footer;

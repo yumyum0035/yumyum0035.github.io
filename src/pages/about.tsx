@@ -17,12 +17,6 @@ const About = () => {
       src: "https://img.icons8.com/ios/256/twitter.png",
     },
     {
-      url: "https://twitter.com/nightmare0break",
-      title: "twitter FFXIV",
-      src: "https://img.icons8.com/ios/256/twitter.png",
-      note: "shitpost and some draws goes here",
-    },
-    {
       url: "https://artstation.com/yuumi",
       title: "artstation",
       src: "https://img.icons8.com/ios/256/drawing--v2.png",
@@ -36,6 +30,12 @@ const About = () => {
       url: "https://ko-fi.com/yuumi0035",
       title: "ko-fi",
       src: "https://img.icons8.com/ios/256/cafe.png",
+    },
+    {
+      url: "https://twitter.com/nightmare0break",
+      title: "twitter FFXIV",
+      src: "https://img.icons8.com/ios/256/twitter.png",
+      note: "shitpost and some draws goes here",
     },
     {
       url: "https://yuumi0035.tumblr.com/tagged/ym0035art",
