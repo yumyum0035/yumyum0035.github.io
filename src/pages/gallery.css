@@ -2,8 +2,9 @@
   --img-size: 15rem;
   display: grid;
   gap: 0.5em;
-  grid-template-columns: repeat(3, var(--img-size));
+  grid-template-columns: repeat(2, var(--img-size));
   grid-auto-rows: var(--img-size);
+  justify-content: center;
 }
 
 .gallery-item {

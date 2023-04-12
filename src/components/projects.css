@@ -2,7 +2,7 @@
   --thumbnail-size: 15rem;
   display: grid;
   gap: 0.5em;
-  grid-template-columns: repeat(3, min-content);
+  grid-template-columns: repeat(2, min-content);
   justify-content: center;
 }
 
