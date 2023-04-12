@@ -1,0 +1,20 @@
+.gallery {
+  --img-size: 15rem;
+  display: grid;
+  gap: 0.5em;
+  grid-template-columns: repeat(3, var(--img-size));
+  grid-auto-rows: var(--img-size);
+}
+
+.gallery-item {
+  overflow: hidden;
+  width: var(--img-size);
+  height: var(--img-size);
+}
+
+.gallery-item img {
+  cursor: pointer;
+  object-fit: cover;
+  width: 400px;
+  object-position: -100px -100px;
+}

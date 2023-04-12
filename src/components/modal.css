@@ -1,0 +1,34 @@
+.modal {
+  display: grid;
+  gap: 0.5em;
+  grid-template-areas: "modal-close" "modal-image" "modal-text";
+  grid-template-rows: repeat(3, min-content);
+  align-content: start;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.close-modal {
+  grid-area: modal-close;
+  width: 3.2rem;
+  height: 3.2rem;
+  justify-self: end;
+  font-size: 3rem;
+  color: white;
+}
+
+.modal-image {
+  grid-area: modal-image;
+  width: 100%;
+}
+
+.modal-text {
+  grid-area: modal-text;
+  color: white;
+  text-align: center;
+}
