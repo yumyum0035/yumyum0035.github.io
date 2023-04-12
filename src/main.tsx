@@ -38,7 +38,7 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "/3D-art/:projectid",
+        path: "/3D-art/:projectId",
         element: <Project />,
       },
     ],

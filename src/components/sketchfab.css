@@ -1,0 +1,12 @@
+.sketchfab-embed-wrapper {
+  max-width: 100%;
+}
+
+.sketchfab-embed-wrapper iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 0.5rem;
+
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}

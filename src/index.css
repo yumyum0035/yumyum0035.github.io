@@ -112,7 +112,7 @@ header {
 #main {
   align-self: center;
   grid-area: main;
-  height: 60rem;
+  max-height: 75rem;
   overflow-y: auto;
 }
 footer {
