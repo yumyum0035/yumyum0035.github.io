@@ -9,8 +9,7 @@ import CommissionInfo from "./pages/commission-info";
 import Art2D from "./pages/art2D";
 import Art3D from "./pages/art3D";
 import About from "./pages/about";
-import Gallery from "./pages/gallery";
-import Projects from "./pages/projects";
+import Project from "./pages/project";
 
 const router = createBrowserRouter([
   {
@@ -39,12 +38,8 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "/gallery/:id",
-        element: <Gallery />,
-      },
-      {
-        path: "/project/:id",
-        element: <Projects />,
+        path: "/3D-art/:projectid",
+        element: <Project />,
       },
     ],
   },

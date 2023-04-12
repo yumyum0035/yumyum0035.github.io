@@ -1,0 +1,17 @@
+.projects {
+  --thumbnail-size: 15rem;
+  display: grid;
+  gap: 0.5em;
+  grid-template-columns: repeat(3, min-content);
+  justify-content: center;
+}
+
+.project {
+  overflow: hidden;
+  width: var(--thumbnail-size);
+  height: var(--thumbnail-size);
+}
+
+.project img {
+  cursor: pointer;
+}

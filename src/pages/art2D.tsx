@@ -1,6 +1,5 @@
-import { useState } from "react";
 import "./art2D.css";
-import Modal from "../components/modal";
+import Gallery from "./gallery";
 
 interface Image {
   key?: string;
@@ -9,8 +8,7 @@ interface Image {
 }
 
 const Art2D = () => {
-  const [show, setShow] = useState(false);
-  const [image, setImage] = useState<Image>({ src: "", comment: "" });
+  //TODO: grab these images from firebase, maybe.
   const images: Image[] = [
     {
       key: "001",
@@ -43,35 +41,10 @@ const Art2D = () => {
     */
   ];
 
-  const handleShow = (image: Image) => {
-    setShow((prev) => !prev);
-    setImage(image);
-  };
-
   return (
     <section>
       <h2>2D art</h2>
-      <article className="gallery">
-        {images.map((image) => (
-          <div className="gallery-item" key={image.key}>
-            <img
-              src={image.src}
-              alt=""
-              onClick={() =>
-                handleShow({ src: image.src, comment: image.comment })
-              }
-            />
-          </div>
-        ))}
-        {show && (
-          <Modal show={show} setShow={setShow}>
-            <img className="modal-image" src={image.src} alt="" />
-            {image.comment !== "" && (
-              <p className="modal-text">{image.comment}</p>
-            )}
-          </Modal>
-        )}
-      </article>
+      <Gallery content={images} />
     </section>
   );
 };
