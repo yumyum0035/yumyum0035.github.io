@@ -13,7 +13,7 @@ const Art2D = () => {
     {
       key: "001",
       src: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b10af631-0f59-4cff-9272-5d86ccec0e39/dfu4nez-11f26872-3688-499d-9f03-0fc126132bd9.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IxMGFmNjMxLTBmNTktNGNmZi05MjcyLTVkODZjY2VjMGUzOVwvZGZ1NG5lei0xMWYyNjg3Mi0zNjg4LTQ5OWQtOWYwMy0wZmMxMjYxMzJiZDkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.YFc99f8A7czQjSGKvQnL1y4bT94q_r5a7SyxDtoTIqI",
-      comment: "Kaoru in a kimono for HH 10th anniversary",
+      comment: "HH 10th anniversary",
     },
     {
       key: "002",

@@ -9,12 +9,6 @@ interface Item {
   url: string;
 }
 
-/* TODO: media queries
- * 2D/3D gallery
- * website appearance
- * ipad appearance
- */
-
 const Home = () => {
   const elements: Item[] = [
     {
