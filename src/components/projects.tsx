@@ -9,11 +9,8 @@ interface Project {
   sketchfabSrc: string;
 }
 
-interface ParamId {
-  paramId: string;
-}
-
 const Projects = () => {
+  //TODO: grab these from firebase?
   const projects: Project[] = [
     {
       thumbnail:
