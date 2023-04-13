@@ -1,6 +1,7 @@
 import "./commission-info.css";
 
 const CommissionInfo = () => {
+  //TODO: get this info from firebase, maybe
   return (
     <div>
       <h2>Commission Info</h2>
