@@ -15,3 +15,18 @@
 .project img {
   cursor: pointer;
 }
+
+/* media queries: mobile first */
+@media (min-width: 768px) {
+  /* tablet: 768 or higher */
+  .projects {
+    grid-template-columns: repeat(3, min-content);
+  }
+}
+
+@media (min-width: 1024px) {
+  /* desktop: 1024px or higher */
+  .projects {
+    grid-template-columns: repeat(4, min-content);
+  }
+}

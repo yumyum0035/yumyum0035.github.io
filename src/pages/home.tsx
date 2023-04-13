@@ -33,10 +33,10 @@ const Home = () => {
     },
     {
       key: "comms",
-      src: "https://storage.ko-fi.com/cdn/useruploads/display/bbef7ccd-08da-45f6-bef4-6b7543ba7dc6_penny.png",
+      src: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b10af631-0f59-4cff-9272-5d86ccec0e39/dfu8fxw-f3712021-5968-456e-b9ca-a0c95ae8143d.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2IxMGFmNjMxLTBmNTktNGNmZi05MjcyLTVkODZjY2VjMGUzOVwvZGZ1OGZ4dy1mMzcxMjAyMS01OTY4LTQ1NmUtYjljYS1hMGM5NWFlODE0M2QucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Inq1Xk2pS6LomTmD01kQUCOmjLze37C4089kX6jOLfA",
       title: "commission info",
       url: "commission-info",
-      class: "penny",
+      class: "dolphin",
     },
   ];
 

@@ -20,4 +20,17 @@
   object-position: -100px -100px;
 }
 
-/* TODO: media queries */
+/* media queries: mobile first */
+@media (min-width: 768px) {
+  /* tablet: 768 or higher */
+  .gallery {
+    grid-template-columns: repeat(3, min-content);
+  }
+}
+
+@media (min-width: 1024px) {
+  /* desktop: 1024px or higher */
+  .gallery {
+    grid-template-columns: repeat(4, min-content);
+  }
+}

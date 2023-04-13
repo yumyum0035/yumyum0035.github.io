@@ -4,6 +4,7 @@
   grid-template-areas: "modal-close" "modal-image" "modal-text";
   grid-template-rows: repeat(3, min-content);
   align-content: start;
+  justify-items: center;
 
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -32,4 +33,29 @@
   grid-area: modal-text;
   color: white;
   text-align: center;
+}
+
+/* media queries: mobile first */
+@media (min-width: 768px) {
+  /* tablet: 768 or higher */
+  .modal {
+    overflow: auto;
+  }
+
+  .modal-image {
+    width: auto;
+    max-width: 80%;
+    margin: 1em;
+  }
+
+  .close-modal {
+    margin: 1em 1em 0 0;
+  }
+}
+@media (min-width: 1024px) {
+  /* desktop: 1024px or higher */
+  .modal-image {
+    width: auto;
+    max-width: 100%;
+  }
 }

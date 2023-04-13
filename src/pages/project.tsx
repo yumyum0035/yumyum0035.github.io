@@ -1,5 +1,5 @@
 import "./project.css";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Sketchfab from "../components/sketchfab";
 
 interface Project {
@@ -19,6 +19,10 @@ const Project = () => {
       <h2>{propsData.title}</h2>
       <Sketchfab src={propsData.sketchfabSrc} title={propsData.title} />
       <p>{propsData.comment}</p>
+
+      <section>
+        <Link to={"/3D-art"}>Return to 3D arts</Link>
+      </section>
     </article>
   );
 };

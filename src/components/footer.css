@@ -4,7 +4,7 @@ footer {
   grid-auto-flow: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 0 0 0.5em;
+  margin-bottom: 1em;
 }
 
 footer p {

@@ -100,7 +100,7 @@ button {
     "header"
     "main"
     "footer";
-  grid-template-columns: 95vw;
+  grid-template-columns: 100vw;
   grid-template-rows: min-content auto min-content;
   height: 100vh;
   justify-content: center;
@@ -110,10 +110,11 @@ header {
   grid-area: header;
 }
 #main {
-  align-self: center;
+  align-self: flex-start;
   grid-area: main;
-  max-height: 75rem;
+  max-height: 75vh;
   overflow-y: auto;
+  padding: 0 2.5vw;
 }
 footer {
   grid-area: footer;
@@ -126,8 +127,16 @@ footer {
 
 @media (min-width: 768px) {
   /* tablet: 768 or higher */
+  #main,
+  footer {
+    padding: 0 10vw;
+  }
 }
 
 @media (min-width: 1024px) {
   /* desktop: 1024px or higher */
+  #main,
+  footer {
+    padding: 0 30vw;
+  }
 }

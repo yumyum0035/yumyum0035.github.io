@@ -15,21 +15,26 @@
 }
 
 .img-box img {
-  width: 1920px;
   height: 100%;
   object-fit: cover;
   opacity: 0.5;
 }
 
 .link {
-  object-position: -85rem -10rem;
+  width: calc(1920px / 2);
+  object-position: -35rem -3rem;
 }
 .natsume {
-  object-position: -50rem -34rem;
+  width: calc(1920px / 2);
+  object-position: -19rem -19rem;
 }
 .penny {
-  width: 1280px !important;
-  object-position: -40rem -40rem;
+  width: 780px;
+  object-position: -20rem -20rem;
+}
+.dolphin {
+  width: 1230px;
+  object-position: -60rem -30rem;
 }
 
 .banner-title {
@@ -53,4 +58,38 @@
   text-transform: uppercase;
 }
 
-/* TODO: media queries */
+/* media queries: mobile first */
+@media (min-width: 768px) {
+  /* tablet: 768 or higher */
+
+  .banner {
+    grid-template-rows: 25rem;
+  }
+
+  .link {
+    object-position: -20rem 0rem;
+  }
+  .natsume {
+    object-position: -10rem -14rem;
+  }
+  .dolphin {
+    object-position: -35rem -30rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* desktop: 1024px or higher */
+  .banner {
+    grid-template-rows: 22rem;
+  }
+
+  .link {
+    object-position: -5rem -2rem;
+  }
+  .natsume {
+    object-position: -5rem -14rem;
+  }
+  .dolphin {
+    object-position: -25rem -30rem;
+  }
+}
